@@ -1016,7 +1016,7 @@ Function &&
             s = "https://platform.twitter.com",
             a = [
               "https://syndication.twitter.com",
-              "https://cdn.syndication.twimg.com",
+              "https://syndication.twimg.com",
               "https://localhost.twitter.com:8444",
             ],
             u = [
@@ -1035,7 +1035,7 @@ Function &&
             },
             f = function () {
               var t = r.get("backendHost");
-              return t && d(a, t) ? t : "https://cdn.syndication.twimg.com";
+              return t && d(a, t) ? t : "https://syndication.twimg.com";
             },
             l = function () {
               var t = r.get("settingsSvcHost");
