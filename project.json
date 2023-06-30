@@ -1,0 +1,57 @@
+﻿[
+	{
+		"name" : "Organic and Printed Electronics",
+		"description" : "This research will concentrate on the development of processing schemes for the manufacture of organic optoelectronic devices, such as field-effect transistors, photovoltaic cells, light-emitting diodes and sensors. Particular attention is paid to the creation of model systems with well-defined interfaces and controlled molecular order; as well as technological relevant formulations that can be deposited over large areas. One focus will be on blends of organic semiconductors with bulk commodity insulators such as high-density polyethylene, polyethylene oxides, etc., that have shown to exhibit comparable optoelectronic features as neat systems even at a content of the insulator of 80 wt% and more. In addition, activities have been started to develop high-dielectric constant solar cell materials using a physical-chemistry approach in order to elucidate whether this can lead to organic photovoltaic systems that do not require bulk hetero-junction architectures. These activities will be underpinned by fundamental studies on the phase behavior and physical chemistry of organic semiconductors – neat or in multicomponent systems.",
+		"applications" : [
+			"Insulator:semiconductor ternary systems for the fabrication of ‘thick’, printable and mechanically tough solar cell systems",
+			"Organic light-emitting diodes: towards novel, solution-processable device architectures",
+			"Bias-stress-free organic electronics structures",
+			"Solution-processable sensors (e.g. pressure sensors) exploiting ‘nano-pinballing’ strategies (see also: ‘Micro-/Nano-fabrication with Functional Organic Materials’",
+			"Planar photochromic devices"
+		],
+		"img" : "project1.png"
+	},
+	{
+		"name" : "Advanced Optical Systems",
+		"description" : "Projects within this theme concentrate on the design, fabrication and use of structures that allow manipulation of light. We exploit solution-processable high-refractive index materials of low optical loss that have been developed in my group to produce photonic structures − on rigid substrates, flexible supports, fibers, and beyond. The newly developed materials enables fabrication of dielectric Bragg reflectors and surface-structured films and tapes. Vision is now to extend this to the design and production of 2D- and 3D photonic crystals, fully solution-processed microcavities, as well as architectures exhibiting structural colours or low reflection over a predefined wavelength regimes. Combined with the micro- and nano-fabrication schemes that area advance in my group, further extension to the realization of plasmonically active structures can be envisioned.",
+		"applications" : [
+			"Light-in/-out coupling structures for solar cells, light-emitting diodes, photodetectors, etc.",
+			"Heat mirrors based on dielectric Bragg reflectors",
+			"Anti-reflection coatings",
+			"Solution-processed microcavities (e.g. for realization of Laser cavities and polariton devices)",
+			"Photonic waveguides"
+		],
+		"img" : "project2.png"
+	},
+	{
+		"name" : "Bioelectronics",
+		"description" : "Efforts are directed towards the development of versatile, multifunctional soft architectures for use at the biological interface and health care applications. One target is to design and develop systems that can conduct electrons/holes as well as ions. Strategies to achieve this include the novel, chemical design of novel semiconductors; use of blends; or creation of multilayer systems with ion conducting membranes such as those produced with Nafion®. Realisation of such mixed conductor systems is important for electronic devices that transduce the activity of neurons into electronic signals. Mixed ion/electronic conducting structures may also be used as a platform to elucidate the electroactive treatment of Alzheimer’s disease, potentially combined with ferroelectric options. Key thereby will be to answer fundamental questions about ion transport in electronic polymers, especially how molecular order, conformational arrangements and macroscopic properties affect ionic/electronic transport. In addition, we aim at designing and fabricating soft, functional substrates for cell growth (e.g. for cardiac tissues), lipid bilayer depositions, as well as general studies of the interactions and behavior of soft functional matter, incl. conducting systems, within biological an environment. Finally solvent-free processing will be investigated that prevent contamination with unwanted organic compounds, and ‘nano-pinballing’ approaches used to create biological sensor arrays.",
+		"applications" : [
+			"Neural prosthesis applications (or brain-machine-interfaces). Electrode microarrays (e.g. for sensors, bioelectronics applications; sensors)",
+			"Cardiac tissues",
+			"Sensor arrays with targeted application, e.g., in disposable diagnostic"
+		],
+		"img" : "project3.png"
+	},
+	{
+		"name" : "Energy Harvesting & Storage Materials, and Beyond",
+		"description" : "The principal objectives in this activity are to tailor and create new types of energy harvesting and storage materials. This includes novel ‘solar fuels’ for photocatalytic fuel cells and new types of membranes for such devices (but also for other purposes). We will concentrate on multifunctional inorganic:organic hybrid structures (liquid and solid) that can be readily produced and processed. Such hybrid materials will be the center of interest as they will permit to combine specific, desired characteristics of inorganic species (e.g. photo-reduction) with the versatility of organics. Note that the developed materials likely find other usage: for instance, in membranes for water/oil splitting), batteries, heat management structures, etc.",
+		"applications" : [
+			"Solar fuels based on liquid inorganic:organic hybrids for photocatalytic fuel cells",
+			"Ion-selective membranes",
+			"Photocatalytically active thin films and fibers (e.g. for water splitting, water purification)"
+		],
+		"img" : "project4.png"
+	},
+	{
+		"name" : "Micro-/Nano-fabrication with Functional Organic Materials",
+		"description" : "Key focus here is to explore use of well-defined surfaces, both in terms of their chemical and physical attributes, to create functional patterns on rigid/flexible supports and on fibers. This involves the design and creation of surface structures that cover a broad spectrum of length-scales and a variety of geometries, through the further development of current and the advancement of entirely novel micro-/nano-structuring methods. Thereby we exploit both solution- and melt processes. Additional features can be introduce via a strategy we termed ‘Nano- and Micropinballing’ that exploits convectional self-assembly processes to deposit nanoparticles at predefined locations.",
+		"applications" : [
+			"Photonic structures, including dielectric Bragg reflectors, wave guides and microcavities (see also: ‘Advanced Optical Systems’)",
+			"Electrode microarrays (e.g. for sensors, bioelectronics applications; sensors)",
+			"Ferroelectric memories",
+			"Flexible substrates for lipid bilayer growth (for the development of e.g. virus sensors; see also: ’Bioelectronics’)",
+			"Photo-catalysis (via photonic-mediate light harvesting/light localization)"],
+		"img" : "project5.png"
+	}
+]

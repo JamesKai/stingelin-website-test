@@ -1,0 +1,53 @@
+[
+    {
+        "name" : "Deparment of Energy",
+        "project" : [
+            "Designing a light-matter quantum-entropy knob"
+        ],
+        "img" : "DOE.png"
+    },
+    {
+        "name" : "AFOSR-DURIP",
+        "project" : [
+            "Perovskite Deposition and Characterization Station at Controlled Environment"
+        ],
+        "img" : "afosr.jpg"
+    },
+    {
+        "name" : "NSF - DMREF",
+        "project" : [
+            "Metallic-type transport in polymers: Establishing materials design criteria and predicting structure/property interrelations"
+        ],
+        "img" : "NSF.png"
+    },
+    {
+        "name" : "ONR-DURIP",
+        "project" : [
+            "Hyperspectral imaging platform for in-situ monitoring of functional thin-film formation and solution-processed devices with spatial and temporal resolution"
+        ],
+        "img" :"ONR.png"
+    },
+    {
+        "name" : "KAUST (Saudi Arabia)",
+        "project" : [
+            "CRG: Bespoke Crystallization to Enable High Performance Organic Electronics and Circuits"
+        ],
+        "img" : "kaust.png"
+    },
+    {
+        "name" : "BSF – binational US Israel Science Foundation ",
+        "project" : [
+            "Towards inorganic/organic hybrid materials with high refractive index and low optical loss"
+        ],
+        "img" : "BSF.jpg"
+    },
+    {
+        "name" : "Marie Skłodowska-Curie",
+        "project" : [
+            "IONBIKE: Innovative Ion-gels For Bioelectronics",
+            "ITN TADFlife: Exploiting developments in the innovative approach of using a smart matrix concept to enhance OLED lifetime and efficiency",
+            "ITN INFORM: INterFaces in Opto-electRonic Thin Film Multilayer Devices. Techniques like materials chemistry, polymer processing, ultra-fast probes, device physics & technology and large-area processing to collectively target the critical issues that stifle progress of the promising electronics platform."
+        ],
+        "img" : "Marie-Curie.png"
+    }
+]
