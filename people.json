@@ -1,238 +1,238 @@
 [
-{
-    "name" : "Marlow Durbin",
-    "year" : "2018 - Present",
-    "degree" : "PhD",
-    "major" : "ChBE",
-    "description" : "Marlow studies the mechanical properties of hybrid inorganic:organic and mixed ion-electron conducting materials for bioelectronics applications. Outside of the lab, Marlow serves as the President of the Georgia Tech Student Polymer Network (SPN), a student organization that fosters interactions between graduates in polymer science, representatives at polymer industries, and the broader Atlanta community. Marlow received his B.S. in Chemical & Biological Engineering with a double major in Spanish from the University of Alabama. There, he researched ionic liquids and ionic polyimides for applications in carbon capture and additive manufacturing under Professor Jason Bara. In his spare time, Marlow enjoys home brewing, scuba diving, hiking through his home state of North Carolina, and watching both kinds of football.",
-    "email" : "mmdurbin@gatech.edu",
-    "img" : "marlow.jpg"
+  {
+    "name": "Abdulaziz Aldubayan",
+    "year": "2019 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Abdulaziz investigates the electrical properties of hybrid inorganic:organic materials and their device integration for the Internet of Things (IoT) applications. Abdulaziz received his B.S. in Electrical Engineering from the University of Birmingham. He also received his M.S. in Materials Science & Engineering from Northwestern University in 2019. Abdulaziz also worked as a research engineer at SABIC CRD at KAUST, where his research focused on design, fabrication, and characterization of flexible metal oxide-based sensors. In his spare time, Abdulaziz enjoys playing tennis, reading, and hiking.",
+    "email": "dubayanmh@gatech.edu",
+    "img": "aziz.jpg"
   },
-{
-    "name" : "Abdulaziz Aldubayan",
-    "year" : "2019 - Present",
-    "degree" : "PhD",
-    "major" : "MSE",
-    "description" : "Abdulaziz investigates the electrical properties of hybrid inorganic:organic materials and their device integration for the Internet of Things (IoT) applications. Abdulaziz received his B.S. in Electrical Engineering from the University of Birmingham. He also received his M.S. in Materials Science & Engineering from Northwestern University in 2019. Abdulaziz also worked as a research engineer at SABIC CRD at KAUST, where his research focused on design, fabrication, and characterization of flexible metal oxide-based sensors. In his spare time, Abdulaziz enjoys playing tennis, reading, and hiking.",
-    "email" : "dubayanmh@gatech.edu",
-    "img" : "aziz.jpg"
-  }, 
-{
-    "name" : "Amalie Atassi",
-    "year" : "2019 - Present",
-    "degree" : "PhD",
-    "major" : "MSE",
-    "description" : "Co-advised by Dr. Shannon Yee, Amalie investigates thermal and charge transport in organic materials and is generally interested in the solid-state properties of disordered materials. She graduated with her B.S. in MSE and a Certificate in Semiconductor Materials from the University of Florida in 2019. In her free time, she enjoys exploring new places, eating delicious foods, mixing music, and weightlifting.",
-    "email" : "aatassi3@gatech.edu",
-    "img" : "amalie.jpg"
+  {
+    "name": "Amalie Atassi",
+    "year": "2019 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Co-advised by Dr. Shannon Yee, Amalie investigates thermal and charge transport in organic materials and is generally interested in the solid-state properties of disordered materials. She graduated with her B.S. in MSE and a Certificate in Semiconductor Materials from the University of Florida in 2019. In her free time, she enjoys exploring new places, eating delicious foods, mixing music, and weightlifting.",
+    "email": "aatassi3@gatech.edu",
+    "img": "amalie.jpg"
   },
-{
-    "name" : "Mark Weber",
-    "year" : "2019 - Present",
-    "degree" : "PhD",
-    "major" : "MSE",
-    "description" : "His research investigates the liquid crystalline behavior of conjugated polymer systems as a function of chain rigidity.  He has earned a B.S. degrees in Physics from California State University of Long Beach (2019) in addition to a B.S. in Business Administration from Wagner College (2013).",
-    "email" : "mweber47@gatech.edu",
-    "img" : "mark.jpg"
+  {
+    "name": "Mark Weber",
+    "year": "2019 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "His research investigates the liquid crystalline behavior of conjugated polymer systems as a function of chain rigidity.  He has earned a B.S. degrees in Physics from California State University of Long Beach (2019) in addition to a B.S. in Business Administration from Wagner College (2013).",
+    "email": "mweber47@gatech.edu",
+    "img": "mark.jpg"
   },
-{
-    "name" : "Tanner Hickman",
-    "year" : "2019 - Present",
-    "degree" : "PhD",
-    "major" : "ChBE",
-    "description" : "Co-advised by Dr. Carson Meredith, Tanner studies swelling and gas permeation in multicomponent polymer systems with a focus on renewable materials. He received his B.S. in Chemical and Biomolecular Engineering from the University of South Alabama. There, he was advised by Dr. Kevin West and studied gas-expanded ionic liquids as well as surface-functionalized cellulose with superhydrophobic and antimicrobial properties. In his spare time, Tanner enjoys hiking and playing soccer.",
-    "email" : "thickman6@gatech.edu",
-    "img" : "tanner.jpg"
-  },  
-{
-    "name" : "Victoria Quiros Cordero",
-    "year" : "2019 - Present",
-    "degree" : "PhD",
-    "major" : "MSE",
-    "description" : "Victoria studies solution-processed optical microcavities for polariton-based optoelectronics, co-advised by professor Carlos Silva. She graduated with a B.S. in Physics and another in Electrical Engineering from the University of Costa Rica. During her undergrad, she was a research assistant at the Materials Science and Engineering Research Center of her university. Also, in the Summer of 2018, as an intern in the Whitesides Research Group, she investigated the charge transport through self-assembled monolayers on a bendable bottom-electrode. Outside of academics, Victoria likes contemporary dance, exercising, attending concerts, and hiking.",
-    "email" : "victoria.quiroscordero@gatech.edu",
-    "img" : "victoria.jpg"
+  {
+    "name": "Tanner Hickman",
+    "year": "2019 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Carson Meredith, Tanner studies swelling and gas permeation in multicomponent polymer systems with a focus on renewable materials. He received his B.S. in Chemical and Biomolecular Engineering from the University of South Alabama. There, he was advised by Dr. Kevin West and studied gas-expanded ionic liquids as well as surface-functionalized cellulose with superhydrophobic and antimicrobial properties. In his spare time, Tanner enjoys hiking and playing soccer.",
+    "email": "thickman6@gatech.edu",
+    "img": "tanner.jpg"
   },
-{
-    "name" : "Andrew Wu",
-    "year" : "2021 - Present",
-    "degree" : "PhD",
-    "major" : "ChBE",
-    "description" : "Co-advised by Dr. Kalaitzidou Kyriaki, Andrew investigates the thermo-reversibility of adhesive layer in muti-layers food packaging material for layers separation and recycling purpose. He received his B.S. in Chemical Engineering from National Taiwan University in 2020 and worked in Dr. Kuo-Chuang Ho Lab, studying the high crystallinity of perovskite crystal growth in perovskite solar cells. In his spare time, he enjoys eating, playing basketball and soccer and window shopping.",
-    "email" : "awu340@gatech.edu",
-    "img" : "andrew.jpg"
+  {
+    "name": "Victoria Quiros Cordero",
+    "year": "2019 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Victoria studies solution-processed optical microcavities for polariton-based optoelectronics, co-advised by professor Carlos Silva. She graduated with a B.S. in Physics and another in Electrical Engineering from the University of Costa Rica. During her undergrad, she was a research assistant at the Materials Science and Engineering Research Center of her university. Also, in the Summer of 2018, as an intern in the Whitesides Research Group, she investigated the charge transport through self-assembled monolayers on a bendable bottom-electrode. Outside of academics, Victoria likes contemporary dance, exercising, attending concerts, and hiking.",
+    "email": "victoria.quiroscordero@gatech.edu",
+    "img": "victoria.jpg"
   },
-{
-    "name" : "Henry Kantrow",
-    "year" : "2021 - Present",
-    "degree" : "PhD",
-    "major" : "ChBE",
-    "description" : "Co-advised by Dr. Carlos Silva, Henry investigates the role of molecular weight and blending on the optoelectronic properties of semiconducting polymers. He received his B.S. in Chemical Engineering from Louisiana State University in 2021, where he worked in the McPeak Lab studying the rotation of fluorescent dyes under external electric fields. Outside of the lab, he enjoys cycling, running, travelling, and cooking new foods.",
-    "email" : "hkantrow3@gatech.edu",
-    "img" : "henry.jpg"
+  {
+    "name": "Andrew Wu",
+    "year": "2021 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Kalaitzidou Kyriaki, Andrew investigates the thermo-reversibility of adhesive layer in muti-layers food packaging material for layers separation and recycling purpose. He received his B.S. in Chemical Engineering from National Taiwan University in 2020 and worked in Dr. Kuo-Chuang Ho Lab, studying the high crystallinity of perovskite crystal growth in perovskite solar cells. In his spare time, he enjoys eating, playing basketball and soccer and window shopping.",
+    "email": "awu340@gatech.edu",
+    "img": "andrew.jpg"
   },
-{
-    "name" : "Javaz Rolle",
-    "year" : "2021 - Present",
-    "degree" : "PhD",
-    "major" : "ChBE",
-    "description" : "Co-advised by Dr. Carson Meredith, Javaz investigates the recyclability of multilayer packaging materials by incorporating biodegradable polymers with petroleum-based polymers. Javaz received his B.S in Chemical Engineering from Florida Institute of Technology in 2018.  He also received his M.S in Chemical Engineering from Villanova University in 2020, where his research focused on wastewater treatment through microplastics removal via coagulation and the coagulation/antibacterial properties of Moringa Oleifera seed protein, under the advisement of Dr. Dorothy Skaf and Dr. Vito Punzi. In his spare time, he enjoys playing tennis, basketball, and baking.",
-    "email" : "jrolle3@gatech.edu",
-    "img" : "javaz.jpg"
+  {
+    "name": "Henry Kantrow",
+    "year": "2021 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Carlos Silva, Henry investigates the role of molecular weight and blending on the optoelectronic properties of semiconducting polymers. He received his B.S. in Chemical Engineering from Louisiana State University in 2021, where he worked in the McPeak Lab studying the rotation of fluorescent dyes under external electric fields. Outside of the lab, he enjoys cycling, running, travelling, and cooking new foods.",
+    "email": "hkantrow3@gatech.edu",
+    "img": "henry.jpg"
   },
-{
-    "name" : "Linda Tian",
-    "year" : "2021 - Present",
-    "degree" : "MS",
-    "major" : "MSE",
-    "description" : "Linda studies how local order can be controlled through blending conjugated polymers with ionic liquids. Outside of lab, Linda is the founder and president of Georgia Tech's first free textbook lending system, TRAILS (Textbook Redistribution and Institutional Lending System), a charitable organization that provides free class textbooks to undergraduate and graduate students from economically disadvantaged backgrounds. Linda received her B.S. in Biomedical Engineering from Georgia Tech in 2019. In her undergraduate thesis research, she investigated the biomedical applications of triboelectric nanogenerators (TENGs), under the advisement of Professor Zhong L. Wang. In her spare time, she enjoys trying new foods, reading, traveling, and walking her puppy, Lily Pad Thai III.",
-    "email" : "ltian31@gatech.edu",
-    "img" : "linda.jpg"
+  {
+    "name": "Javaz Rolle",
+    "year": "2021 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Carson Meredith, Javaz investigates the recyclability of multilayer packaging materials by incorporating biodegradable polymers with petroleum-based polymers. Javaz received his B.S in Chemical Engineering from Florida Institute of Technology in 2018.  He also received his M.S in Chemical Engineering from Villanova University in 2020, where his research focused on wastewater treatment through microplastics removal via coagulation and the coagulation/antibacterial properties of Moringa Oleifera seed protein, under the advisement of Dr. Dorothy Skaf and Dr. Vito Punzi. In his spare time, he enjoys playing tennis, basketball, and baking.",
+    "email": "jrolle3@gatech.edu",
+    "img": "javaz.jpg"
   },
-{
-    "name" : "Reanna Rafiq",
-    "year" : "2020 - Present",
-    "degree" : "Undergrad",
-    "major" : "ChBE",
-    "description" : "Reanna is a second-year chemical engineering student who works in the Stingelin Lab as an undergraduate research assistant to Marlow Durbin. Her research is focused on developing soft, conducting organic material, specifically for bioelectronic applications. She plans to graduate in May 2024. In her spare time, she enjoys playing the piano and going hiking.",
-    "email" : "rrafiq3@gatech.edu",
-    "img" : "reanna.jpg"
+  {
+    "name": "Linda Tian",
+    "year": "2021 - Present",
+    "degree": "MS",
+    "major": "MSE",
+    "description": "Linda studies how local order can be controlled through blending conjugated polymers with ionic liquids. Outside of lab, Linda is the founder and president of Georgia Tech's first free textbook lending system, TRAILS (Textbook Redistribution and Institutional Lending System), a charitable organization that provides free class textbooks to undergraduate and graduate students from economically disadvantaged backgrounds. Linda received her B.S. in Biomedical Engineering from Georgia Tech in 2019. In her undergraduate thesis research, she investigated the biomedical applications of triboelectric nanogenerators (TENGs), under the advisement of Professor Zhong L. Wang. In her spare time, she enjoys trying new foods, reading, traveling, and walking her puppy, Lily Pad Thai III.",
+    "email": "ltian31@gatech.edu",
+    "img": "linda.jpg"
   },
-{
-    "name" : "Anna Burson",
-    "year" : "2021 - Present",
-    "degree" : "Undergrad",
-    "major" : "ChBE",
-    "description" : "Anna works with Alex Balzer in understanding inorganic-organic hybrid solutions of titanium oxide hydrate and a polyalcohol to make hybrids for applications in photosynthetic rechargeable batteries and photosynthetic fuel cells. She plans to graduate in December 2024 with a BS in ChBE. Her hobbies include reading, baking, and hiking.",
-    "email" : "aburson6@gatech.edu",
-    "img" : "anna.jpg"
+  {
+    "name": "Reanna Rafiq",
+    "year": "2020 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Reanna is a second-year chemical engineering student who works in the Stingelin Lab as an undergraduate research assistant to Marlow Durbin. Her research is focused on developing soft, conducting organic material, specifically for bioelectronic applications. She plans to graduate in May 2024. In her spare time, she enjoys playing the piano and going hiking.",
+    "email": "rrafiq3@gatech.edu",
+    "img": "reanna.jpg"
   },
-{
-    "name" : "Anush Singhal",
-    "year" : "2021 - Present",
-    "degree" : "Undergrad",
-    "major" : "MSE",
-    "description" : "Anush investigates the role of processing on the optoelectronic properties of hairy-rod polymer systems used for organic semiconductor applications. Outside of the lab, Anush serves as the CEO of the Materials Innovation Learning Laboratory (MILL), the nation's premier free to use materials-focused make and measure space. He plans on graduating May 2024 with a BS in MSE. Anush enjoys landscaping, gardening, designing and skiing (back home in Canada).",
-    "email" : "asinghal74@gatech.edu",
-    "img" : "anush.jpg"
+  {
+    "name": "Anna Burson",
+    "year": "2021 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Anna works with Alex Balzer in understanding inorganic-organic hybrid solutions of titanium oxide hydrate and a polyalcohol to make hybrids for applications in photosynthetic rechargeable batteries and photosynthetic fuel cells. She plans to graduate in December 2024 with a BS in ChBE. Her hobbies include reading, baking, and hiking.",
+    "email": "aburson6@gatech.edu",
+    "img": "anna.jpg"
   },
-{
-    "name" : "Beliz Utebay",
-    "year" : "2021 - Present",
-    "degree" : "Undergrad",
-    "major" : "ChBE",
-    "description" : "Beliz works with Marlow Durbin in varying physical and chemical crosslink densities in hydrogels and investigating the structure-property relationships of polymer networks, which can be applied biologically. She plans to graduate in May 2023. Her hobbies include playing instruments, volleyball, singing and photography.",
-    "email" : "butebay@gatech.edu",
-    "img" : "beliz.jpg"
+  {
+    "name": "Anush Singhal",
+    "year": "2021 - Present",
+    "degree": "Undergrad",
+    "major": "MSE",
+    "description": "Anush investigates the role of processing on the optoelectronic properties of hairy-rod polymer systems used for organic semiconductor applications. Outside of the lab, Anush serves as the CEO of the Materials Innovation Learning Laboratory (MILL), the nation's premier free to use materials-focused make and measure space. He plans on graduating May 2024 with a BS in MSE. Anush enjoys landscaping, gardening, designing and skiing (back home in Canada).",
+    "email": "asinghal74@gatech.edu",
+    "img": "anush.jpg"
   },
-{
-    "name" : "Mehul Dhoot",
-    "year" : "2022 - Present",
-    "degree" : "Undergrad",
-    "major" : "ChBE",
-    "description" : "As an undergraduate assistant to Victoria Quiros Cordero, Mehul fabricates solution-processed thin films made from an organic-inorganic hybrid material and analyzes their optical properties. He is also experimenting with the effects of photonic curing on these films and their potential applications in photonic crystals. In his free time, Mehul enjoys sports, video games, and outdoor activities.",
-    "email" : "mdhoot6@gatech.edu",
-    "img" : "mehul.jpg"
+  {
+    "name": "Beliz Utebay",
+    "year": "2021 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Beliz works with Marlow Durbin in varying physical and chemical crosslink densities in hydrogels and investigating the structure-property relationships of polymer networks, which can be applied biologically. She plans to graduate in May 2023. Her hobbies include playing instruments, volleyball, singing and photography.",
+    "email": "butebay@gatech.edu",
+    "img": "beliz.jpg"
   },
-{
-    "name" : "Silvia Paul",
-    "year" : "2022 - Present",
-    "degree" : "Undergrad",
-    "major" : "ChBE",
-    "description" : "As an undergraduate assistant to Amalie Atassi, she uses differential scanning calorimetry to construct phase diagrams of non-fullerene acceptors blended with a donor polymer to find the optimum blend composition for more efficient solar cells. She plans to graduate in May 2024 with a BS in ChBE. Her hobbies include cooking, reading, and hiking.",
-    "email" : "sroux3@gatech.edu",
-    "img" : "silvia.jpg"
+  {
+    "name": "Mehul Dhoot",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "As an undergraduate assistant to Victoria Quiros Cordero, Mehul fabricates solution-processed thin films made from an organic-inorganic hybrid material and analyzes their optical properties. He is also experimenting with the effects of photonic curing on these films and their potential applications in photonic crystals. In his free time, Mehul enjoys sports, video games, and outdoor activities.",
+    "email": "mdhoot6@gatech.edu",
+    "img": "mehul.jpg"
   },
-{
-    "name" : "Seong-Min Kim",
-    "year" : "2018 - 2021",
-    "degree" : "Postdoc, Alumni",
-    "description" : "He joined as a postdoctoral fellow to understand mixed electronic and ionic transport in conjugated polymers. He obtained his B.S. in Materials Science and Engineering (MSE) from Hanyang University in 2010. During his Ph.D. degrees in MSE from GIST, his research aimed at describing the fundamental understanding on biointerfaces in perspective of material scientists. He enjoys hiking, traveling, music, and dancing.",
-    "email" : "seongmin.kim@mse.gatech.edu",
-    "img" : "seongmin.jpg"
-  }, 
-{
-    "name" : "Andre Zeumault",
-    "year" : "2017 - 2019",
-    "degree" : "Postdoc, Alumni",
-    "description" : "He was a postdoctoral fellow in the School of MSE, where he conducted research on solution-processed electronics and thermoelectrics. He obtained his BS and PhD in Electrical Engineering and Computer Sciences from the University of California, Berkeley in 2011 and 2017 respectively. He is now an Assistant Professor in the Min H. Kao Department of Electrical Engineering & Computer Science at the University of Tennessee.",
-    "email" : "azeumault3@gatech.edu",
-    "img" : "andre.jpg"
+  {
+    "name": "Silvia Paul",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "As an undergraduate assistant to Amalie Atassi, she uses differential scanning calorimetry to construct phase diagrams of non-fullerene acceptors blended with a donor polymer to find the optimum blend composition for more efficient solar cells. She plans to graduate in May 2024 with a BS in ChBE. Her hobbies include cooking, reading, and hiking.",
+    "email": "sroux3@gatech.edu",
+    "img": "silvia.jpg"
   },
-{
-    "name" : "Hongmo Li",
-    "year" : "2016 - 2022",
-    "degree" : "PhD, Alumni",
-    "major" : "MSE",
-    "description" : "He worked on doping of conductive polymers and ultrafast optical probes for gaining insight into structure/processing/property interrelations and developing materials database towards accelerated materials discovery. He was a member of GT Bridge Club, where he participated in Collegiate Bridge Bowl and various Atlanta club games. He received his BS in MSE and a BA in French from Shanghai Jiao Tong University in 2016. He enjoys his hobbies including bridge, badminton, Mahjong, pop music and travelling.",
-    "email" : "hli16@gatech.edu",
-    "img" : "hongmo.png"
-  }, 
-{
-    "name" : "Alex Balzer",
-    "year" : "2016 - 2022",
-    "degree" : "PhD, Alumni",
-    "major" : "ChBE",
-    "description" : "His research focused on tuning the dielectric constant of metal oxide - organic nanocomposites for use in various light management devices. He received his B.S. in Chemical Engineering with Minors in Math and German from North Carolina State University in 2015. He likes to take advantage of the beautiful Atlanta weather by playing several sports, especially golf.",
-    "email" : "abalzer3@gatech.edu",
-    "img" : "alex.jpg"
+  {
+    "name": "Seong-Min Kim",
+    "year": "2018 - 2021",
+    "degree": "Postdoc, Alumni",
+    "description": "He joined as a postdoctoral fellow to understand mixed electronic and ionic transport in conjugated polymers. He obtained his B.S. in Materials Science and Engineering (MSE) from Hanyang University in 2010. During his Ph.D. degrees in MSE from GIST, his research aimed at describing the fundamental understanding on biointerfaces in perspective of material scientists. He enjoys hiking, traveling, music, and dancing.",
+    "email": "seongmin.kim@mse.gatech.edu",
+    "img": "seongmin.jpg"
   },
-{
-    "name" : "Aditi Khirbat",
-    "year" : "2016 - 2021",
-    "degree" : "Alumni",
-    "major" : "MSE, PhD",
-    "description" : "Her research focused on processing, characterizing and developing structure-property relations of polymer blends for application in organic electronics and photovoltaics. She served on the leadership board for Women in MSE during her PhD. She received her B.Eng. degree in Materials Science and Engineering from National University of Singapore (NUS) in 2016. She enjoys traveling, photography and dance.",
-    "email" : "akhirbat3@gatech.edu",
-    "img" : "aditi.jpg"
+  {
+    "name": "Andre Zeumault",
+    "year": "2017 - 2019",
+    "degree": "Postdoc, Alumni",
+    "description": "He was a postdoctoral fellow in the School of MSE, where he conducted research on solution-processed electronics and thermoelectrics. He obtained his BS and PhD in Electrical Engineering and Computer Sciences from the University of California, Berkeley in 2011 and 2017 respectively. He is now an Assistant Professor in the Min H. Kao Department of Electrical Engineering & Computer Science at the University of Tennessee.",
+    "email": "azeumault3@gatech.edu",
+    "img": "andre.jpg"
   },
- {
-    "name" : "Conor Perry",
-    "year" : "2017 - 2019",
-    "degree" : "Alumni",
-    "major" : "MSE, MS",
-    "description" : "His research focused on processing polymer/metal oxide molecular hybrids and incorporating them into optical and photonic devices. He received his BS in Materials Engineering from California Polytechnic University, San Luis Obispo (Cal Poly SLO) in 2017. He participated in a materials science REU program at Boise State University in Summer 2016, and during his senior year of undergraduate studies, interned at Lawrence Berkeley National Lab in Fall 2016 and Lawrence Livermore National Lab in Spring 2017.",
-    "email" : "conorperry@gatech.edu",
-    "img" : "conor.jpg"
+  {
+    "name": "Marlow Durbin",
+    "year": "2018 - 2023",
+    "degree": "PhD, Alumni",
+    "major": "ChBE",
+    "description": "Marlow studies the mechanical properties of hybrid inorganic:organic and mixed ion-electron conducting materials for bioelectronics applications. Outside of the lab, Marlow serves as the President of the Georgia Tech Student Polymer Network (SPN), a student organization that fosters interactions between graduates in polymer science, representatives at polymer industries, and the broader Atlanta community. Marlow received his B.S. in Chemical & Biological Engineering with a double major in Spanish from the University of Alabama. There, he researched ionic liquids and ionic polyimides for applications in carbon capture and additive manufacturing under Professor Jason Bara. In his spare time, Marlow enjoys home brewing, scuba diving, hiking through his home state of North Carolina, and watching both kinds of football.",
+    "email": "mmdurbin@gatech.edu",
+    "img": "marlow.jpg"
   },
-{
-    "name" : "Alexander Chen",
-    "degree" : "Alumni",
-    "major" : "MSE, Undergrad",
-    "description" : "He focused on processing and analyzing dip-coat film-making methods that can produce consistent thicknesses in multi-layer structures and their relation to specific wavelength transmission and absorbance.",
-    "email" : "alexchenofnj@gatech.edu",
-    "img" : "alexC.jpg"
+  {
+    "name": "Hongmo Li",
+    "year": "2016 - 2022",
+    "degree": "PhD, Alumni",
+    "major": "MSE",
+    "description": "He worked on doping of conductive polymers and ultrafast optical probes for gaining insight into structure/processing/property interrelations and developing materials database towards accelerated materials discovery. He was a member of GT Bridge Club, where he participated in Collegiate Bridge Bowl and various Atlanta club games. He received his BS in MSE and a BA in French from Shanghai Jiao Tong University in 2016. He enjoys his hobbies including bridge, badminton, Mahjong, pop music and travelling.",
+    "email": "hli16@gatech.edu",
+    "img": "hongmo.png"
   },
-{
-    "name" : "Allison Brandvold",
-    "degree" : "Alumni",
-    "major" : "MSE, Undergrad",
-    "description" : "Her research focused on analyzing the properties of polymer mixtures as well as the energies associated with organic materials.",
-    "email" : "abrandvold6@gatech.edu",
-    "img" : "ally.jpg"
+  {
+    "name": "Alex Balzer",
+    "year": "2016 - 2022",
+    "degree": "PhD, Alumni",
+    "major": "ChBE",
+    "description": "His research focused on tuning the dielectric constant of metal oxide - organic nanocomposites for use in various light management devices. He received his B.S. in Chemical Engineering with Minors in Math and German from North Carolina State University in 2015. He likes to take advantage of the beautiful Atlanta weather by playing several sports, especially golf.",
+    "email": "abalzer3@gatech.edu",
+    "img": "alex.jpg"
   },
-{
-    "name" : "Gavin Rolls",
-    "degree" : "Alumni",
-    "major" : "MSE, Undergrad",
-    "description" : "He worked with Hongmo Li on establishing a materials design framework to better understand charge transport properties in organic semiconductors.",
-    "email" : "grolls@gatech.edu",
-    "img" : "gavin.jpg"
+  {
+    "name": "Aditi Khirbat",
+    "year": "2016 - 2021",
+    "degree": "PhD, Alumni",
+    "major": "MSE",
+    "description": "Her research focused on processing, characterizing and developing structure-property relations of polymer blends for application in organic electronics and photovoltaics. She served on the leadership board for Women in MSE during her PhD. She received her B.Eng. degree in Materials Science and Engineering from National University of Singapore (NUS) in 2016. She enjoys traveling, photography and dance.",
+    "email": "akhirbat3@gatech.edu",
+    "img": "aditi.jpg"
   },
-{
-    "name" : "Jack Terrell",
-    "degree" : "Alumni",
-    "major" : "ChBE, Undergrad",
-    "description" : "He primarily focused on using semiconducting polymers to produce IPN hydrogels as a platform for bio-electronics.",
-    "email" : "jterrell20@gatech.edu",
-    "img" : "jack.jpg"
+  {
+    "name": "Conor Perry",
+    "year": "2017 - 2019",
+    "degree": "MS Alumni",
+    "major": "MSE",
+    "description": "His research focused on processing polymer/metal oxide molecular hybrids and incorporating them into optical and photonic devices. He received his BS in Materials Engineering from California Polytechnic University, San Luis Obispo (Cal Poly SLO) in 2017. He participated in a materials science REU program at Boise State University in Summer 2016, and during his senior year of undergraduate studies, interned at Lawrence Berkeley National Lab in Fall 2016 and Lawrence Livermore National Lab in Spring 2017.",
+    "email": "conorperry@gatech.edu",
+    "img": "conor.jpg"
   },
-{
-    "name" : "Oladipo Bakare",
-    "degree" : "Alumni",
-    "major" : "ChBE, Undegrad",
-    "description" : "He investigated the morphology of polymers and their mixtures for application in organic photovoltaics.",
-    "email" : "obakare7@gatech.edu",
-    "img" : "oladipo.png"
+  {
+    "name": "Alexander Chen",
+    "degree": "Undergrad Alumni",
+    "major": "MSE",
+    "description": "He focused on processing and analyzing dip-coat film-making methods that can produce consistent thicknesses in multi-layer structures and their relation to specific wavelength transmission and absorbance.",
+    "email": "alexchenofnj@gatech.edu",
+    "img": "alexC.jpg"
+  },
+  {
+    "name": "Allison Brandvold",
+    "degree": "Undergrad Alumni",
+    "major": "MSE",
+    "description": "Her research focused on analyzing the properties of polymer mixtures as well as the energies associated with organic materials.",
+    "email": "abrandvold6@gatech.edu",
+    "img": "ally.jpg"
+  },
+  {
+    "name": "Gavin Rolls",
+    "degree": "Undergrad Alumni",
+    "major": "MSE",
+    "description": "He worked with Hongmo Li on establishing a materials design framework to better understand charge transport properties in organic semiconductors.",
+    "email": "grolls@gatech.edu",
+    "img": "gavin.jpg"
+  },
+  {
+    "name": "Jack Terrell",
+    "degree": "Undergrad Alumni",
+    "major": "ChBE",
+    "description": "He primarily focused on using semiconducting polymers to produce IPN hydrogels as a platform for bio-electronics.",
+    "email": "jterrell20@gatech.edu",
+    "img": "jack.jpg"
+  },
+  {
+    "name": "Oladipo Bakare",
+    "degree": "Undergrad Alumni",
+    "major": "ChBE",
+    "description": "He investigated the morphology of polymers and their mixtures for application in organic photovoltaics.",
+    "email": "obakare7@gatech.edu",
+    "img": "oladipo.png"
   }
 ]
