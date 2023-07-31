@@ -72,6 +72,24 @@
     "img": "javaz.jpg"
   },
   {
+    "name": "Hsiang-Ju(James) Kai",
+    "year": "2022 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Thomas Gartner, James explores the physical chemistry of polyolefin-cellulose interfaces through experimental and computational approaches. He graduated with his B.S in ChBE from National Taiwan University in 2018 and M.S in ChBE from the University of Pennsylvania in 2020. Before joining the lab, he worked as a research scientist in Academia Sinica and a biomedical startup company under Dr. Jung-Chi Laio. In his spare time, he enjoys watching movies, reading books and playing video games.",
+    "email": "james.kai@gatech.edu",
+    "img": "james.jpeg"
+  },
+  {
+    "name": "Matteo Palesati",
+    "year": "2023 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Co-advised by Dr. Blair Brettmann, Matteo investigates delamination methods for polymer multilayer upcycling, focusing on solvent diffusion and layer dissolution at buried interfaces. He received his B.S. degree in Mechanical Engineering from Universitá degli Studi di Roma ‘La Sapienza’. He also earned his M.S. degree from Georgia Institute of Technology in Mechanical Engineering in 2023. In his free time, Matteo likes hiking, reading, drawing and watching his two favorite sports, F1 and football.",
+    "email": "mpalesati3@gatech.edu",
+    "img": "matteo.png"
+  },
+  {
     "name": "Linda Tian",
     "year": "2021 - Present",
     "degree": "MS",
@@ -94,7 +112,7 @@
     "year": "2021 - Present",
     "degree": "Undergrad",
     "major": "ChBE",
-    "description": "Anna works with Alex Balzer in understanding inorganic-organic hybrid solutions of titanium oxide hydrate and a polyalcohol to make hybrids for applications in photosynthetic rechargeable batteries and photosynthetic fuel cells. She plans to graduate in December 2024 with a BS in ChBE. Her hobbies include reading, baking, and hiking.",
+    "description": "Anna’s research focuses on inorganic-organic hybrid solutions of titanium oxide hydrate and a polyalcohol. These hybrids have applications as fuels for photosynthetic rechargeable batteries and photosynthetic fuel cells. She works as an undergraduate assistant to Alex Balzer. Anna plans to graduate in December 2024 with a B.S. in ChBE. Her hobbies include reading, baking, and hiking.",
     "email": "aburson6@gatech.edu",
     "img": "anna.jpg"
   },
@@ -103,7 +121,7 @@
     "year": "2021 - Present",
     "degree": "Undergrad",
     "major": "MSE",
-    "description": "Anush investigates the role of processing on the optoelectronic properties of hairy-rod polymer systems used for organic semiconductor applications. Outside of the lab, Anush serves as the CEO of the Materials Innovation Learning Laboratory (MILL), the nation's premier free to use materials-focused make and measure space. He plans on graduating May 2024 with a BS in MSE. Anush enjoys landscaping, gardening, designing and skiing (back home in Canada).",
+    "description": "Anush investigates the role of processing on the optoelectronic properties of hairy-rod polymer systems used for organic semiconductor applications. Additionally, he is interested in the solidification kinetics of conjugated polymers. He plans on graduating May 2024 with a BS in MSE. In his spare time, Anush enjoys gardening, skiing and 3D design.",
     "email": "asinghal74@gatech.edu",
     "img": "anush.jpg"
   },
@@ -133,6 +151,24 @@
     "description": "As an undergraduate assistant to Amalie Atassi, she uses differential scanning calorimetry to construct phase diagrams of non-fullerene acceptors blended with a donor polymer to find the optimum blend composition for more efficient solar cells. She plans to graduate in May 2024 with a BS in ChBE. Her hobbies include cooking, reading, and hiking.",
     "email": "sroux3@gatech.edu",
     "img": "silvia.jpg"
+  },
+  {
+    "name": "Peter Gardner",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Peter assists Javaz Rolle in both the Stingelin and Meredith labs. He works on using the HTMECH to test interlayer adhesion of polycarbonate bilayers and coating paper with chitin and cellulose to be used as an oxygen barrier in food packaging. After graduating in May 2024, Peter will go into industry as a food engineer. In his free time, he enjoys playing the cello and ultimate frisbee.",
+    "email": "pgardner9@gatech.edu",
+    "img": "peter.png"
+  },
+  {
+    "name": "Sabrina Klein",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Working in both the Stingelin and Meredith labs, Sabrina is an undergraduate research assistant to Tanner Hickman. She investigates the use of titanium oxide hydrates in photocurable cellulose based gas barrier films. Upon graduating in May 2024, Sabrina will start her career in a chemical plant as a process engineer. In her free time, she enjoys reading, astronomy, and playing board games.",
+    "email": "sklein43@gatech.edu",
+    "img": "default.jpg"
   },
   {
     "name": "Seong-Min Kim",
