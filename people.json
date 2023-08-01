@@ -171,6 +171,15 @@
     "img": "default.jpg"
   },
   {
+    "name": "Sebastian Toyotoshi",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Sebastian is a first-year undergraduate student currently working under Henry Kantrow as a research assistant. He works to design and construct a device to analyze the photophysics of P3HT and other semiconducting polymers using electroabsorption spectroscopy. In his free time, he enjoys playing tabletop games, baking, and walking through nature.",
+    "email": "stoyotoshi3@gatech.edu ",
+    "img": "sebastian.jpg"
+  },
+  {
     "name": "Seong-Min Kim",
     "year": "2018 - 2021",
     "degree": "Postdoc, Alumni",
