@@ -108,6 +108,15 @@
     "img": "linda.jpg"
   },
   {
+    "name": "Andrew Setley",
+    "year": "2022 - Present",
+    "degree": "MS",
+    "major": "MSE",
+    "description": "Andrew is a second-year Master’s student in the Stingelin Lab and a member of SPECS, the Center for Soft PhotoElectroChemical Systems. His research seeks to understand the impact static and dynamic disorder have on the optical, thermal, and electrochemical properties of rigid-rod conjugated polymers used for photoelectrochemical devices. Andrew received his B.S. in MSE from the University of Washington, Seattle in 2014, with a minor in mathematics. His research there centered on the process engineering of DRIE etch trenches for MEMS and TSVs. After graduating, he worked as a scientist at Crane Currency, where he formulated printing inks and resins used in micro-optic banknote threads and brand enhancement labels. In his free time, he enjoys cooking, boxing, baseball, hiking, and traveling with his wife and Welsh Terrier.",
+    "email": "asetley@gatech.edu",
+    "img": "andrew s.jpg"
+  },
+  {
     "name": "Reanna Rafiq",
     "year": "2020 - Present",
     "degree": "Undergrad",
