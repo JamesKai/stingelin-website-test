@@ -144,15 +144,6 @@
     "img": "anush.jpg"
   },
   {
-    "name": "Beliz Utebay",
-    "year": "2021 - Present",
-    "degree": "Undergrad",
-    "major": "ChBE",
-    "description": "Beliz works with Marlow Durbin in varying physical and chemical crosslink densities in hydrogels and investigating the structure-property relationships of polymer networks, which can be applied biologically. She plans to graduate in May 2023. Her hobbies include playing instruments, volleyball, singing and photography.",
-    "email": "butebay@gatech.edu",
-    "img": "beliz.jpg"
-  },
-  {
     "name": "Mehul Dhoot",
     "year": "2022 - Present",
     "degree": "Undergrad",
@@ -257,6 +248,15 @@
     "description": "His research focused on processing polymer/metal oxide molecular hybrids and incorporating them into optical and photonic devices. He received his BS in Materials Engineering from California Polytechnic University, San Luis Obispo (Cal Poly SLO) in 2017. He participated in a materials science REU program at Boise State University in Summer 2016, and during his senior year of undergraduate studies, interned at Lawrence Berkeley National Lab in Fall 2016 and Lawrence Livermore National Lab in Spring 2017.",
     "email": "conorperry@gatech.edu",
     "img": "conor.jpg"
+  },
+  {
+    "name": "Beliz Utebay",
+    "year": "2021 - 2023",
+    "degree": "Undergrad, Alumni",
+    "major": "ChBE",
+    "description": "Beliz works with Marlow Durbin in varying physical and chemical crosslink densities in hydrogels and investigating the structure-property relationships of polymer networks, which can be applied biologically. She plans to graduate in May 2023. Her hobbies include playing instruments, volleyball, singing and photography.",
+    "email": "butebay@gatech.edu",
+    "img": "beliz.jpg"
   },
   {
     "name": "Alexander Chen",
