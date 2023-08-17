@@ -126,6 +126,15 @@
     "img": "reanna.jpg"
   },
   {
+    "name": "Brandon Perry",
+    "year": "2020 - Present",
+    "degree": "Undergrad",
+    "major": "MSE",
+    "description": "Brandon Perry studies flow cell batteries that can be renewed using UV light. His research looks at the reaction of a Ti-organic hybrid system and how various conditions such as electrode preparation, pH, and viscosity intensity of UV light and more can affect the performance of the battery. He plans on graduating in Summer 2024. With his spare time, Brandon likes hiking, reading, writing, and drawing.",
+    "email": "bperry39@gatech.edu",
+    "img": "brandon p.jpg"
+  },
+  {
     "name": "Anna Burson",
     "year": "2021 - Present",
     "degree": "Undergrad",
@@ -257,6 +266,15 @@
     "description": "Beliz works with Marlow Durbin in varying physical and chemical crosslink densities in hydrogels and investigating the structure-property relationships of polymer networks, which can be applied biologically. She plans to graduate in May 2023. Her hobbies include playing instruments, volleyball, singing and photography.",
     "email": "butebay@gatech.edu",
     "img": "beliz.jpg"
+  },
+  {
+    "name": "Victoria Selby",
+    "year": "2021 - 2022",
+    "degree": "Undergrad, Alumni",
+    "major": "ChBE",
+    "description": "As an undergraduate assistant to Tanner Hickman in both the Stingelin and Meredith labs, Victoria developed dialdehyde cellulose barrier polymers with the goal of market replacement of single-use petroleum packaging. She was later advised by Dr. Chris Luettgen as she investigated substituting agricultural waste in the production of cellulosic packaging and studying the impact of incorporating nanocrystalline fibers on microfiber bonding and greater material properties. Victoria now works in the pulp industry as a process engineer managing operations and heading projects to increase the sustainability of production. After hours, she enjoys video games and everything outdoors. ",
+    "email": "",
+    "img": "victoria s.jpg"
   },
   {
     "name": "Alexander Chen",
