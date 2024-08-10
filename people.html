@@ -6,38 +6,44 @@
     <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
   </div>
   <div class="container">
-  <div class="section people_list">
-    <div class="row">
-      <div class="col s12 center">
-        <div class="wrapper">
-          <ul class="ul-card">
-          </ul>
+    <div class="people_pagination" style="display: flex; flex-direction: row; justify-content:end; padding-right: 10px; padding-top: 30px;">
+      <button id="prevPage" style="background-color: #e0e0e0; border: none">Previous</button>
+      <span class="currentPage">1</span>
+      <button id="nextPage" style="background-color: #e0e0e0; border: none">Next</button>
+    </div>
+    <div class="section people_list">
+      <div class="row">
+        <div class="col s12 center">
+          <div class="wrapper">
+            <ul class="ul-card" id="peopleList">
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <li class="sample-card hide">
-      <div class="row">
-        <div class="people_card">
-          <div class="col s3 m2 face">
-            <img src="img/people/tmp_people.jpg" alt="" class="left circle responsive-img">
-          </div>
-          <div class="col s9 m10 highlight dy">
-            <span class="degree right">MSE, Undergrad</span>
-            <span class="year right hide">Present – yyyy</span>
-          </div>
-          <div class="detail">
-            <div class="col offset-m2 m10 s12 name_email">
-              <span class="left name">First Last</span>
-              <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
+      <li class="sample-card hide">
+        <div class="row">
+          <div class="people_card">
+            <div class="col s3 m2 face">
+              <img src="img/people/tmp_people.jpg" alt="" class="left circle responsive-img">
             </div>
-            <div class="col offset-m2 m10 s12 description">
-              <p>
-                Bla bla bla
-              </p>
+            <div class="col s9 m10 highlight dy">
+              <span class="degree right">MSE, Undergrad</span>
+              <span class="year right hide">Present – yyyy</span>
+            </div>
+            <div class="detail">
+              <div class="col offset-m2 m10 s12 name_email">
+                <span class="left name">First Last</span>
+                <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
+              </div>
+              <div class="col offset-m2 m10 s12 description">
+                <p>
+                  Bla bla bla
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-    </li>
+      </li>
     </div>
   </div>
+
 </section>

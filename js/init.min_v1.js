@@ -12,15 +12,20 @@ var PROJECT = "project";
 var IMG = "img";
 var TITLE = "title";
 var DESCRIPTION = "description";
+
+$.ajaxSetup({
+  async: false
+});
+
 $(document).ready(function () {
   console.log("ready!");
   $(".nav_mobile").sidenav({ draggable: true });
   $(".nav-item").on("click", function () {
-    name = $(this).attr("name");
+    let name = $(this).attr("name");
     f_switchContent(name, "");
   });
   $(".research_nav_item").on("click", function () {
-    name = $(this).attr("name");
+    let name = $(this).attr("name");
     f_switchContent(RESEARCH, name);
   });
   var a = window.location.hash.substr(1);
@@ -102,7 +107,8 @@ function f_switchContent(b, a) {
       $(".content")
         .load("people.html", function () {
           $(".parallax").parallax();
-          f_people();
+          f_people(1);
+          f_pagination();
         })
         .hide()
         .fadeIn();
@@ -126,6 +132,7 @@ function f_switchContent(b, a) {
   $(".nav_mobile").sidenav("close");
   f_initNav();
 }
+
 var P_NAME = "name";
 var P_YEAR = "year";
 var P_DEGREE = "degree";
@@ -133,15 +140,27 @@ var P_MAJOR = "major";
 var P_DESCRIPTION = "description";
 var P_EMAIL = "email";
 var P_IMAGE = "img";
-function f_people() {
+function f_people(page, len_per_page = 10) {
   var a = "img/people/";
   var b = "mailto:";
   const EMPTY_STRING = "&nbsp";
-  console.log("f_people");
+  console.log(page);
   $.getJSON("people.json", function (c) {
+    // Always start from the first people, use page to control the actual shown people
+    $(".people_list .ul-card").empty();
     $parent = $(".people_list .ul-card");
     $elm = $(".people_list .sample-card");
+    let iter = 1;
     $.each(c, function (d, e) {
+      // Skip the people that are in the previous page
+      if (iter <= len_per_page * (page - 1)) {
+        ++iter;
+        return;
+      }
+      // Skip the people that are in the next page
+      if (iter > len_per_page * page) {
+        return;
+      }
       $clone = $elm.clone();
       degree = e[P_DEGREE];
       degree_type_class = degree.toLowerCase();
@@ -161,7 +180,7 @@ function f_people() {
       if (e[P_DESCRIPTION].length < 150) {
         e[P_DESCRIPTION] += EMPTY_STRING.repeat(150 - e[P_DESCRIPTION].length);
       }
-      console.log(e[P_DESCRIPTION]);
+      // console.log(e[P_DESCRIPTION]);
       $clone.find(".description p").html(e[P_DESCRIPTION]);
       $clone.find(".face img").attr("src", a + e[P_IMAGE]);
       major = "";
@@ -171,9 +190,59 @@ function f_people() {
       degree_type = major + degree;
       $clone.find(".degree").addClass(degree_type_class).html(degree_type);
       $parent.append($clone);
+
+      // Update the iterator
+      ++iter;
     });
   });
 }
+function f_pagination() {
+  len_per_page = 10;
+  total_number_of_people = get_total_number_of_people();
+  // hide the previous page button initially
+  $(".people_pagination #prevPage").hide();
+  // hide the current page number initially
+  $(".people_pagination .currentPage").hide();
+  // Next page
+  $(".people_pagination #nextPage").on("click", function () {
+    $(".people_pagination #prevPage").show();
+    // Get current page Number
+    let curr_page = parseInt($(".people_pagination .currentPage").text());
+    if ((curr_page + 1) * len_per_page >= total_number_of_people) {
+      // hide the next page button
+      $(".people_pagination #nextPage").hide();
+      $(".people_pagination .currentPage").hide();
+    } else {
+      $(".people_pagination #nextPage").show();
+      $(".people_pagination .currentPage").show();
+    }
+    f_people(curr_page + 1, len_per_page);
+    $(".people_pagination .currentPage").text(curr_page + 1);
+  });
+  // Previous page
+  $(".people_pagination #prevPage").on("click", function () {
+    $(".people_pagination #nextPage").show();
+    let curr_page = parseInt($(".people_pagination .currentPage").text());
+    if ((curr_page - 1) <= 1) {
+      $(".people_pagination #prevPage").hide();
+      $(".people_pagination .currentPage").hide();
+    } else {
+      $(".people_pagination #prevPage").show();
+      $(".people_pagination .currentPage").show();
+    }
+    f_people(curr_page - 1, len_per_page);
+    $(".people_pagination .currentPage").text(curr_page - 1);
+  });
+}
+
+function get_total_number_of_people() {
+  data = [];
+  $.getJSON("people.json", function (c) {
+    data.push(c);
+  });
+  return data[0].length;
+}
+
 var AUTHOR = "author";
 var TITLE = "title";
 var YEAR = "year";
@@ -198,7 +267,7 @@ var PUB_TYPE_LIST = [
 function f_publication() {
   console.log("publication : ");
   $(".pub_type_content li").on("click", function () {
-    name = $(this).find("a").text();
+    let name = $(this).find("a").text();
     $(".pub_type .pub_type_nav").html(name);
     type = $(this).find("a").attr("type");
     type = type.split(" ");
