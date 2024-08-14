@@ -1,48 +1,58 @@
 <section name="people" class="people">
-  <div class="parallax-container">
-    <div class="container" style="margin-top:125px">
-      <p class="center font_0">Team</p>
+  <div style="display: flex; flex-direction: column;">
+    <div class="parallax-container">
+      <div class="container">
+        <p class="center font_0">Team</p>
+      </div>
+      <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
     </div>
-    <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
-  </div>
-  <div class="container">
-    <div class="people_pagination" style="display: flex; flex-direction: row; justify-content:end; padding-right: 10px; padding-top: 30px;">
-      <button id="prevPage" style="background-color: #e0e0e0; border: none">Previous</button>
-      <span class="currentPage">1</span>
-      <button id="nextPage" style="background-color: #e0e0e0; border: none">Next</button>
-    </div>
-    <div class="section people_list">
-      <div class="row">
-        <div class="col s12 center">
-          <div class="wrapper">
-            <ul class="ul-card" id="peopleList">
-            </ul>
+    <div class="container" style="display: flex; flex-direction: column;">
+      <div class="people_pagination">
+        <ul class="pagination">
+          <div class="prevPage">
+            <</div>
+              <div class="currentPage">1</div>
+              <div class="nextPage">></div>
+        </ul>
+      </div>
+      <div class="section people_list"
+        style="display:flex; flex-direction: column; border-top:2px solid rgb(167, 167, 167); margin-top: 5px;">
+        <div class="row">
+          <div class="col s12 center" style="display:flex">
+            <div class="wrapper">
+              <ul class="ul-card" id="peopleList"></ul>
+            </div>
           </div>
         </div>
+        <li class="sample-card hide">
+          <!-- <div class="row"> -->
+          <div class="people_card" style="display: flex; flex-direction:row; align-items: flex-start; column-gap: 3%; justify-content: space-between;">
+            <div style="display: flex; flex-direction:row; align-items: center; column-gap: 3%;">
+              <div class="face">
+                <img src="img/people/tmp_people.jpg" alt="" class="left circle"
+                  style="width: 100px; object-fit: contain;">
+              </div>
+              <div class=""
+                style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 10px;">
+                <div class="name_email" style="padding: 0; margin: 0;">
+                  <span class="left name">First Last</span>
+                  <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
+                </div>
+                <div class="description">
+                  <p>
+                    Bla bla bla
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="highlight"
+                style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 3px; justify-items: flex-start; width:100px">
+                <span class="degree right" style="margin: 0; padding: 5px; font-size: smaller;">MSE, Undergrad</span>
+                <span class="year right hide" style="margin: 0; padding: 5px; font-size: smaller;">Present – yyyy</span>
+              </div>
+            </div>
       </div>
-      <li class="sample-card hide">
-        <div class="row">
-          <div class="people_card">
-            <div class="col s3 m2 face">
-              <img src="img/people/tmp_people.jpg" alt="" class="left circle responsive-img">
-            </div>
-            <div class="col s9 m10 highlight dy">
-              <span class="degree right">MSE, Undergrad</span>
-              <span class="year right hide">Present – yyyy</span>
-            </div>
-            <div class="detail">
-              <div class="col offset-m2 m10 s12 name_email">
-                <span class="left name">First Last</span>
-                <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
-              </div>
-              <div class="col offset-m2 m10 s12 description">
-                <p>
-                  Bla bla bla
-                </p>
-              </div>
-            </div>
-          </div>
-      </li>
     </div>
   </div>
 

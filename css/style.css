@@ -619,6 +619,7 @@ nav ul a,
     background-color: #979797 !important;
 }
 
+
 @media only screen and (max-width: 600px) {
     .people_card .name_email {
         margin-top: 2%;

@@ -107,8 +107,10 @@ function f_switchContent(b, a) {
       $(".content")
         .load("people.html", function () {
           $(".parallax").parallax();
-          f_people(1);
-          f_pagination();
+          data = get_people_data();
+          const len_per_page=10
+          f_people(data, 1, len_per_page);
+          f_pagination(data, len_per_page);
         })
         .hide()
         .fadeIn();
@@ -133,34 +135,25 @@ function f_switchContent(b, a) {
   f_initNav();
 }
 
-var P_NAME = "name";
-var P_YEAR = "year";
-var P_DEGREE = "degree";
-var P_MAJOR = "major";
-var P_DESCRIPTION = "description";
-var P_EMAIL = "email";
-var P_IMAGE = "img";
-function f_people(page, len_per_page = 10) {
-  var a = "img/people/";
-  var b = "mailto:";
+const P_NAME = "name";
+const P_YEAR = "year";
+const P_DEGREE = "degree";
+const P_MAJOR = "major";
+const P_DESCRIPTION = "description";
+const P_EMAIL = "email";
+const P_IMAGE = "img";
+function f_people(data, page, len_per_page = 10) {
+  const a = "img/people/";
+  const b = "mailto:";
   const EMPTY_STRING = "&nbsp";
-  console.log(page);
-  $.getJSON("people.json", function (c) {
-    // Always start from the first people, use page to control the actual shown people
-    $(".people_list .ul-card").empty();
-    $parent = $(".people_list .ul-card");
+  $parent = $(".people_list .ul-card");
+  $wrapper = $(".people_list .row");
+  $parent.empty();
+  data_in_page = [[...data[0].slice(len_per_page * (page - 1), len_per_page * page)]];
+  data_in_page.map(function (c) {
     $elm = $(".people_list .sample-card");
-    let iter = 1;
+
     $.each(c, function (d, e) {
-      // Skip the people that are in the previous page
-      if (iter <= len_per_page * (page - 1)) {
-        ++iter;
-        return;
-      }
-      // Skip the people that are in the next page
-      if (iter > len_per_page * page) {
-        return;
-      }
       $clone = $elm.clone();
       degree = e[P_DEGREE];
       degree_type_class = degree.toLowerCase();
@@ -180,7 +173,6 @@ function f_people(page, len_per_page = 10) {
       if (e[P_DESCRIPTION].length < 150) {
         e[P_DESCRIPTION] += EMPTY_STRING.repeat(150 - e[P_DESCRIPTION].length);
       }
-      // console.log(e[P_DESCRIPTION]);
       $clone.find(".description p").html(e[P_DESCRIPTION]);
       $clone.find(".face img").attr("src", a + e[P_IMAGE]);
       major = "";
@@ -190,56 +182,48 @@ function f_people(page, len_per_page = 10) {
       degree_type = major + degree;
       $clone.find(".degree").addClass(degree_type_class).html(degree_type);
       $parent.append($clone);
-
-      // Update the iterator
-      ++iter;
     });
   });
 }
-function f_pagination() {
-  len_per_page = 10;
-  total_number_of_people = get_total_number_of_people();
-  // hide the previous page button initially
-  $(".people_pagination #prevPage").hide();
-  // hide the current page number initially
-  $(".people_pagination .currentPage").hide();
+
+function f_pagination(data, len_per_page=10) {
+  total_number_of_people = data[0].length;
+  max_page_number = Math.ceil(total_number_of_people / len_per_page);
+  $prev_page_btn = $(".people_pagination .prevPage")
+  $next_page_btn = $(".people_pagination .nextPage")
+  $current_page_number = $(".people_pagination .currentPage")
+
   // Next page
-  $(".people_pagination #nextPage").on("click", function () {
-    $(".people_pagination #prevPage").show();
+  $next_page_btn.on("click", function (e) {
+    e.preventDefault()
     // Get current page Number
-    let curr_page = parseInt($(".people_pagination .currentPage").text());
-    if ((curr_page + 1) * len_per_page >= total_number_of_people) {
-      // hide the next page button
-      $(".people_pagination #nextPage").hide();
-      $(".people_pagination .currentPage").hide();
-    } else {
-      $(".people_pagination #nextPage").show();
-      $(".people_pagination .currentPage").show();
+    let curr_page = parseInt($current_page_number.text());
+    if (curr_page < max_page_number) {
+      f_people(data, curr_page + 1, len_per_page = len_per_page);
+      $current_page_number.text(curr_page + 1);
     }
-    f_people(curr_page + 1, len_per_page);
-    $(".people_pagination .currentPage").text(curr_page + 1);
   });
   // Previous page
-  $(".people_pagination #prevPage").on("click", function () {
-    $(".people_pagination #nextPage").show();
-    let curr_page = parseInt($(".people_pagination .currentPage").text());
-    if ((curr_page - 1) <= 1) {
-      $(".people_pagination #prevPage").hide();
-      $(".people_pagination .currentPage").hide();
-    } else {
-      $(".people_pagination #prevPage").show();
-      $(".people_pagination .currentPage").show();
+  $prev_page_btn.on("click", function (e) {
+    e.preventDefault()
+    let curr_page = parseInt($current_page_number.text());
+    if (curr_page > 1) {
+      f_people(data, curr_page - 1, len_per_page = len_per_page);
+      $current_page_number.text(curr_page - 1);
     }
-    f_people(curr_page - 1, len_per_page);
-    $(".people_pagination .currentPage").text(curr_page - 1);
   });
 }
 
-function get_total_number_of_people() {
+function get_people_data() {
   data = [];
   $.getJSON("people.json", function (c) {
     data.push(c);
   });
+  return data;
+}
+
+function get_total_number_of_people() {
+  data = get_people_data();
   return data[0].length;
 }
 

@@ -1,1 +1,865 @@
-body{font-family:Lato,Helvetica,Arial,sans-serif;font-weight:300;font-size:15px}.content{min-height:600px}.content section{padding-bottom:5%}.color_black{color:black!important}.bg_color_gray{background-color:#f7f7f7}.parallax-container{display:block;background:rgba(0,0,0,0.5);height:auto;min-height:300px}.dropdown-trigger:focus,.dropdown-trigger:active,.dropdown-trigger.active,.dropdown-trigger:focus:active{background-image:none;outline:0;-webkit-box-shadow:none;box-shadow:none}*:focus{outline:0}.sub_header{border-bottom:1px solid #ccc;margin:0 0 30px;padding:12px 0;font-weight:350;font-size:22px;text-transform:uppercase}.underline{border-bottom:1px solid #ccc;width:100%}.font_h4{font-weight:400;font-size:16px}.font_13{font-size:13px}.font_0{font:italic normal normal 45px/1.4em 'times new roman',times,serif;color:#fff}.uppercase{text-transform:uppercase}.text-center{text-align:center}p{line-height:2rem;text-align:justify;font-size:1.05em;font-weight:300;letter-spacing:.025em;line-height:1.6}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}.padding_top_25{padding-top:25px}.index_banner{position:fixed;z-index:10;width:100%}nav{background:#908c8c54;background:#23222254;background:#2b2b2b;background:#ffffffb0;background:#ffffffed;color:white;box-shadow:1px 1px 3px #0000001a}nav ul a,#mobile-demo a{color:black;font-weight:lighter;font-size:17px}#mobile-demo a{color:black;font-weight:bolder;cursor:pointer}#research_nav_desktop{width:140px;margin-left:-7px}#research_nav_mobile{width:100%}.research_nav_item{margin-left:-4px}.brand-logo img{height:60%;*/cursor:pointer;width:60%;top:7px;position:relative}.dropdown-content li>a,.dropdown-content li>span{color:black!important}.sidenav-trigger{color:#26a69a}#mobile-demo{background-color:rgba(255,255,255,0.87);padding-top:20px}@media only screen and (max-width:600px){.brand-logo img{top:2px}}@media only screen and (max-width:992px){nav .brand-logo{left:57%}}.home .carousel img{height:100%;width:100%}.home .college_info{margin-top:-45px;color:white;font-size:13px}@media only screen and (min-width:990px){.home .carousel{height:325px;margin-top:-45px}}@media only screen and (max-width:990px){.home .carousel{margin-top:-45px}.home .tweeter_feed{margin-top:-85px}}.home_background{top:100px;position:relative;z-index:2}.description img{background-size:contain!important;background-position:center!important;background-repeat:no-repeat;background-color:white!important}.description .slider .slides li{background-color:white!important}.research .title{border-bottom:1px solid #ccc;margin:0 0 30px;padding:20px 0;color:#4b4b4b;font-weight:300;font-size:26px;text-align:left;-webkit-box-shadow:0 3px 3px -3px #ccc;box-shadow:0 3px 3px -3px #ccc;border:0;font-weight:350}.project-list li{padding:10px;border-radius:3px;margin-top:15px}.project-list li:not(:last-child){border-bottom:1px solid #ccc;padding-bottom:30px;margin-bottom:35px}.project-item .details li{list-style-type:square;display:list-item;list-style-position:outside}.project-item .details ul,.project-item .details li{border:0;padding:0;margin:12px}.project-list .image{width:auto;height:128px;overflow:hidden;float:left;width:135px;background-size:cover;background-position:center;border-radius:2px}.project-list .meta h3{font-size:24px;margin-top:0}.project-list .wrap{overflow:hidden;float:left;width:150px;padding-right:5px}@media only screen and (max-width:400px){.project-list .meta h3{font-size:20px}}.grid:after{content:'';display:block;clear:both}.grid-sizer,.grid-item{width:25%;padding-right:10px;padding-bottom:10px;margin-left:5%}.gutter-sizer{width:1%}.grid-item{float:left}.grid-item img{display:block;width:100%;border-radius:5px;margin-right:10px;margin-bottom:10px}@media only screen and (min-width:800px){.grid-sizer,.grid-item{width:18%;margin-left:5%}}.sponsor-list img{width:70%}.research-company-list ul{border:0}.research-company-list li{padding:0!important;border:none!important;padding-bottom:40px!important}.research-company-list li img{overflow:hidden;float:left;width:100px;padding-right:15px}.research-company-list .collection .name{font-size:20px!important;font-weight:500}.research-company-list .collection .projects{margin-top:10px}.research-company-list .collection .item{margin-bottom:5px}.research-company-list .item i{font-size:10px}.research-company-list .collection .item .title{box-shadow:none!important;-webkit-box-shadow:none!important;padding-left:7px;font-size:15px}.aff-list ul,.aff-list li{border:none!important}.aff-list .collection-item{font-size:16px!important;font-weight:300;padding:0;padding-bottom:10px}.pub-list .pub_type ul{font-weight:300}.pub-list .pub_type a{width:190px}.pub-list .pub_type .btn{background-color:#062f4f}.pub-list p{text-align:left}.pub-list li.pub-card{position:relative;padding:20px 15px 15px 15px;background-color:#fff;-webkit-box-shadow:0 4px 4px -3px #ccc;box-shadow:0 4px 4px -3px #ccc;border-radius:3px;color:#333;text-align:left;margin-bottom:2px}.pub-card .item{font-size:13px;line-height:18px;text-align:left}.pub-card .item .title p{font-size:17px;font-weight:350}.pub-card .item .info{margin-top:-20px}.pub-card .item .additional_info span{padding:5px;padding:7px;line-height:30px;color:white;margin-right:5px}.pub-card .doi,.pub-card .iisn{padding-top:5px;font-size:12px!important}.pub-card a{color:black}.year{background-color:#3a587b}.article{background-color:#f0ad4e!important}.chapter,.book_chapter{background-color:#5cb85c!important}.short_survey{background-color:#ff7043!important}.editorial{background-color:#f57f17!important}.conference_paper{background-color:#428bca!important}.review{background-color:#6d4c41!important}@media only screen and (max-width:750px){.pub-card .type_year{margin-top:5px}}@media only screen and (min-width:750px){.pub-card .journal_info{width:70%}.pub-card .type_year{margin-top:-30px}}.people .parallax-container{background:rgba(0,0,0,0.2);min-height:400px}@media only screen and (min-width:1500px){.people .parallax-container{min-height:600px}}@media only screen and (min-width:2000px){.people .parallax-container{min-height:800px}}.people_card .highlight .degree,.people_card .highlight .year{padding:7px 10px;line-height:30px;margin:0;background-color:#3a587b;color:white}@media only screen and (max-width:400px){.people_card .highlight .degree,.people_card .highlight .year{padding:7px 6px}}.people_card .highlight .year{background-color:#062f4f;margin-right:2px}.people_card .name_email{font-size:20px;margin:0;text-align:left;font-weight:500;margin-top:-3%;padding-bottom:3%}.people_card .email{font-size:15px;color:#092f4ebd;cursor:pointer}.people_card .description{text-align:left;margin-top:-15px}.people_list .ul-card li{margin-top:35px}.people_list .ul-card li:not(:last-child){border-bottom:1px solid #ccc}.people_card .phd{background-color:#428bca!important}.people_card .postdoc{background-color:#f0ad4e!important}.people_card .undergrad{background-color:#5cb85c!important}.people_card .deactive{background-color:#979797!important}@media only screen and (max-width:600px){.people_card .name_email{margin-top:2%;margin-left:25%}}@media only screen and (min-width:600px){.people_card .detail{position:relative;float:left;text-align:left;margin-top:-10%;margin-top:-12%;margin-top:-14%;margin-top:-10%}}.about .nat{background:black;background:#0e2a36;color:white!important;padding-top:80px;padding-bottom:10px}.about .nat .name{font-size:35px}.about .nat_photo{width:100%;height:100%;background:url("../img/natalie.png") center center no-repeat}.about .nat img{border-radius:30px}.about .parallax-container{background:black}.about .parallax-container .row{margin-bottom:-7px;padding-bottom:0}.about .parallax-container p{color:white}@media only screen and (min-width:850px){}.about .title{border-bottom:1px solid #ccc;margin:0 0 30px;padding:12px 0;font-weight:350;font-size:22px;text-transform:capitalize}.about .ul-card{padding:0;margin:0;list-style:none}.about .dy{position:absolute;top:10px;left:-10px;border-radius:0;padding:0;color:white}.about .dy span{padding:7px 10px;line-height:30px;margin:0}.edu_apt .content p{line-height:1.5em}ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span{padding:6px;display:block;text-align:center;color:#fff;position:relative}ul.ul-dates-gray div.dates span:first-child,ul.ul-dates div.dates span:first-child{-webkit-box-shadow:0 2px 6px -3px rgba(68,68,68,0.5);box-shadow:0 2px 6px -3px rgba(68,68,68,0.5);z-index:3;position:relative}ul.ul-dates div.content,ul.ul-dates-gray div.content{margin-left:90px;min-height:70px;padding-top:10px;text-align:left}ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4{font-weight:400;font-size:16px;margin-top:-10px}ul.ul-dates div.content p,ul.ul-dates-gray div.content p{font-size:13px;margin-top:-5px}.about .edu_apt p{margin:0 0 10px;text-align:left}.about .degree,.about .dates,ul.ul-dates div.dates span ul.ul-card li .dy .degree ul.timeline li .date{background-color:#03cc85;background-color:#062f4f}.about .year,ul.ul-dates div.dates span:last-child{background-color:#3a587b}.about .edu_apt ul.ul-card li .description p{font-size:16px;margin:0;text-align:left}.about .edu_apt ul.ul-card li .description p.where{font-weight:300;font-size:14px}.about .edu_apt ul.ul-card li{background-color:#fdfdfd;position:relative;padding:50px 15px 20px 15px;background-color:#fff;margin-bottom:15px;border-radius:3px;margin-left:10px;color:#333}.edu_apt ul.ul-dates,ul.ul-dates-gray{margin:0;padding:0;list-style:none}.edu_apt ul.ul-dates li,.edu_apt ul.ul-dates-gray li{margin-bottom:30px}.edu_apt ul.ul-dates div.dates,ul.ul-dates-gray div.dates{float:left;width:75px}.awards{margin-top:-50px}.about .award{margin:0;margin-bottom:1px;background:#03cc85;background:#062f4f;color:#fff;border-width:medium;border-left-color:white}.about .awards .dy{top:1px;margin-left:10px}.award{background:#fdfdfd;border-left:10px solid;font-size:16px;-webkit-box-shadow:0 3px 3px -3px #ccc;box-shadow:0 3px 3px -3px #ccc;border-radius:3px;border-left-color:#03cc85;color:#777;font-size:15px}.award .year{background-color:transparent;padding-right:10px}.award .description{background:white;color:black}.padding-right{padding-right:10px}.col-container{display:table;width:100%}.col{display:table-cell}footer p{line-height:1.5rem}footer .address{margin:0;padding-top:15px;margin-left:-10px}footer.page-footer{margin:0;box-shadow:0 -1px 2px #0000001a;background-color:#525151db;background-color:#525151;background-color:#333}footer p,footer .text{color:white!important;text-align:left;font-size:12px}
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px
+}
+
+.content {
+    min-height: 600px
+}
+
+.content section {
+    padding-bottom: 5%
+}
+
+.color_black {
+    color: black !important
+}
+
+.bg_color_gray {
+    background-color: #f7f7f7
+}
+
+.parallax-container {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    height: auto;
+    min-height: 300px
+}
+
+.dropdown-trigger:focus,
+.dropdown-trigger:active,
+.dropdown-trigger.active,
+.dropdown-trigger:focus:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+*:focus {
+    outline: 0
+}
+
+.sub_header {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 30px;
+    padding: 12px 0;
+    font-weight: 350;
+    font-size: 22px;
+    text-transform: uppercase
+}
+
+.underline {
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.font_h4 {
+    font-weight: 400;
+    font-size: 16px
+}
+
+.font_13 {
+    font-size: 13px
+}
+
+.font_0 {
+    font: italic normal normal 45px/1.4em 'times new roman', times, serif;
+    color: #fff
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+.text-center {
+    text-align: center
+}
+
+p {
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 1.05em;
+    font-weight: 300;
+    letter-spacing: .025em;
+    line-height: 1.6
+}
+
+.icon-block {
+    padding: 0 15px
+}
+
+.icon-block .material-icons {
+    font-size: inherit
+}
+
+.padding_top_25 {
+    padding-top: 25px
+}
+
+.index_banner {
+    position: fixed;
+    z-index: 10;
+    width: 100%
+}
+
+nav {
+    background: #908c8c54;
+    background: #23222254;
+    background: #2b2b2b;
+    background: #ffffffb0;
+    background: #ffffffed;
+    color: white;
+    box-shadow: 1px 1px 3px #0000001a
+}
+
+nav ul a,
+#mobile-demo a {
+    color: black;
+    font-weight: lighter;
+    font-size: 17px
+}
+
+#mobile-demo a {
+    color: black;
+    font-weight: bolder;
+    cursor: pointer
+}
+
+#research_nav_desktop {
+    width: 140px;
+    margin-left: -7px
+}
+
+#research_nav_mobile {
+    width: 100%
+}
+
+.research_nav_item {
+    margin-left: -4px
+}
+
+.brand-logo img {
+    height: 60%;
+    */cursor: pointer;
+    width: 60%;
+    top: 7px;
+    position: relative
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: black !important
+}
+
+.sidenav-trigger {
+    color: #26a69a
+}
+
+#mobile-demo {
+    background-color: rgba(255, 255, 255, 0.87);
+    padding-top: 20px
+}
+
+@media only screen and (max-width:600px) {
+    .brand-logo img {
+        top: 2px
+    }
+}
+
+@media only screen and (max-width:992px) {
+    nav .brand-logo {
+        left: 57%
+    }
+}
+
+.home .carousel img {
+    height: 100%;
+    width: 100%
+}
+
+.home .college_info {
+    margin-top: -45px;
+    color: white;
+    font-size: 13px
+}
+
+@media only screen and (min-width:990px) {
+    .home .carousel {
+        height: 325px;
+        margin-top: -45px
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .home .carousel {
+        margin-top: -45px
+    }
+
+    .home .tweeter_feed {
+        margin-top: -85px
+    }
+}
+
+.home_background {
+    top: 100px;
+    position: relative;
+    z-index: 2
+}
+
+.description img {
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-color: white !important
+}
+
+.description .slider .slides li {
+    background-color: white !important
+}
+
+.research .title {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 30px;
+    padding: 20px 0;
+    color: #4b4b4b;
+    font-weight: 300;
+    font-size: 26px;
+    text-align: left;
+    -webkit-box-shadow: 0 3px 3px -3px #ccc;
+    box-shadow: 0 3px 3px -3px #ccc;
+    border: 0;
+    font-weight: 350
+}
+
+.project-list li {
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 15px
+}
+
+.project-list li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    margin-bottom: 35px
+}
+
+.project-item .details li {
+    list-style-type: square;
+    display: list-item;
+    list-style-position: outside
+}
+
+.project-item .details ul,
+.project-item .details li {
+    border: 0;
+    padding: 0;
+    margin: 12px
+}
+
+.project-list .image {
+    width: auto;
+    height: 128px;
+    overflow: hidden;
+    float: left;
+    width: 135px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px
+}
+
+.project-list .meta h3 {
+    font-size: 24px;
+    margin-top: 0
+}
+
+.project-list .wrap {
+    overflow: hidden;
+    float: left;
+    width: 150px;
+    padding-right: 5px
+}
+
+@media only screen and (max-width:400px) {
+    .project-list .meta h3 {
+        font-size: 20px
+    }
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.grid-sizer,
+.grid-item {
+    width: 25%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 5%
+}
+
+.gutter-sizer {
+    width: 1%
+}
+
+.grid-item {
+    float: left
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width:800px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 18%;
+        margin-left: 5%
+    }
+}
+
+.sponsor-list img {
+    width: 70%
+}
+
+.research-company-list ul {
+    border: 0
+}
+
+.research-company-list li {
+    padding: 0 !important;
+    border: none !important;
+    padding-bottom: 40px !important
+}
+
+.research-company-list li img {
+    overflow: hidden;
+    float: left;
+    width: 100px;
+    padding-right: 15px
+}
+
+.research-company-list .collection .name {
+    font-size: 20px !important;
+    font-weight: 500
+}
+
+.research-company-list .collection .projects {
+    margin-top: 10px
+}
+
+.research-company-list .collection .item {
+    margin-bottom: 5px
+}
+
+.research-company-list .item i {
+    font-size: 10px
+}
+
+.research-company-list .collection .item .title {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    padding-left: 7px;
+    font-size: 15px
+}
+
+.aff-list ul,
+.aff-list li {
+    border: none !important
+}
+
+.aff-list .collection-item {
+    font-size: 16px !important;
+    font-weight: 300;
+    padding: 0;
+    padding-bottom: 10px
+}
+
+.pub-list .pub_type ul {
+    font-weight: 300
+}
+
+.pub-list .pub_type a {
+    width: 190px
+}
+
+.pub-list .pub_type .btn {
+    background-color: #062f4f
+}
+
+.pub-list p {
+    text-align: left
+}
+
+.pub-list li.pub-card {
+    position: relative;
+    padding: 20px 15px 15px 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 4px -3px #ccc;
+    box-shadow: 0 4px 4px -3px #ccc;
+    border-radius: 3px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 2px
+}
+
+.pub-card .item {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left
+}
+
+.pub-card .item .title p {
+    font-size: 17px;
+    font-weight: 350
+}
+
+.pub-card .item .info {
+    margin-top: -20px
+}
+
+.pub-card .item .additional_info span {
+    padding: 5px;
+    padding: 7px;
+    line-height: 30px;
+    color: white;
+    margin-right: 5px
+}
+
+.pub-card .doi,
+.pub-card .iisn {
+    padding-top: 5px;
+    font-size: 12px !important
+}
+
+.pub-card a {
+    color: black
+}
+
+.year {
+    background-color: #3a587b
+}
+
+.article {
+    background-color: #f0ad4e !important
+}
+
+.chapter,
+.book_chapter {
+    background-color: #5cb85c !important
+}
+
+.short_survey {
+    background-color: #ff7043 !important
+}
+
+.editorial {
+    background-color: #f57f17 !important
+}
+
+.conference_paper {
+    background-color: #428bca !important
+}
+
+.review {
+    background-color: #6d4c41 !important
+}
+
+@media only screen and (max-width:750px) {
+    .pub-card .type_year {
+        margin-top: 5px
+    }
+}
+
+@media only screen and (min-width:750px) {
+    .pub-card .journal_info {
+        width: 70%
+    }
+
+    .pub-card .type_year {
+        margin-top: -30px
+    }
+}
+
+.people .parallax-container {
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 400px
+}
+
+@media only screen and (min-width:1500px) {
+    .people .parallax-container {
+        min-height: 600px
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    .people .parallax-container {
+        min-height: 800px
+    }
+}
+
+.people_card .highlight .degree,
+.people_card .highlight .year {
+    /* padding: 7px 10px; */
+    /* line-height: 30px; */
+    margin: 0;
+    background-color: #3a587b;
+    color: white
+}
+
+@media only screen and (max-width:400px) {
+
+    .people_card .highlight .degree,
+    .people_card .highlight .year {
+        padding: 7px 6px
+    }
+}
+
+.people_card .highlight .year {
+    background-color: #062f4f;
+    margin-right: 2px
+}
+
+.people_card .name_email {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+    margin-top: -3%;
+    padding-bottom: 3%
+}
+
+.people_card .email {
+    font-size: 15px;
+    color: #092f4ebd;
+    cursor: pointer
+}
+
+.people_card .description {
+    text-align: left;
+    margin-top: -15px
+}
+
+.people_list .ul-card li {
+    margin-top: 35px
+}
+
+.people_list .ul-card li:not(:last-child) {
+    border-bottom: 1px solid #ccc
+}
+
+.people_card .phd {
+    background-color: #428bca !important
+}
+
+.people_card .postdoc {
+    background-color: #f0ad4e !important
+}
+
+.people_card .undergrad {
+    background-color: #5cb85c !important
+}
+
+.people_card .deactive {
+    background-color: #979797 !important
+}
+
+
+.people_pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.people_pagination .pagination div {
+    margin: 0 3px;
+    border: 1px solid black;
+    background-color: #062f4f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .people_card .name_email {
+        margin-top: 2%;
+        margin-left: 25%
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .people_card .detail {
+        position: relative;
+        float: left;
+        text-align: left;
+        margin-top: -10%;
+        margin-top: -12%;
+        margin-top: -14%;
+        margin-top: -10%
+    }
+}
+
+.about .nat {
+    background: black;
+    background: #0e2a36;
+    color: white !important;
+    padding-top: 80px;
+    padding-bottom: 10px
+}
+
+.about .nat .name {
+    font-size: 35px
+}
+
+.about .nat_photo {
+    width: 100%;
+    height: 100%;
+    background: url("../img/natalie.png") center center no-repeat
+}
+
+.about .nat img {
+    border-radius: 30px
+}
+
+.about .parallax-container {
+    background: black
+}
+
+.about .parallax-container .row {
+    margin-bottom: -7px;
+    padding-bottom: 0
+}
+
+.about .parallax-container p {
+    color: white
+}
+
+@media only screen and (min-width:850px) {}
+
+.about .title {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 30px;
+    padding: 12px 0;
+    font-weight: 350;
+    font-size: 22px;
+    text-transform: capitalize
+}
+
+.about .ul-card {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.about .dy {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-radius: 0;
+    padding: 0;
+    color: white
+}
+
+.about .dy span {
+    padding: 7px 10px;
+    line-height: 30px;
+    margin: 0
+}
+
+.edu_apt .content p {
+    line-height: 1.5em
+}
+
+ul.ul-dates div.dates span,
+ul.ul-dates-gray div.dates span {
+    padding: 6px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    position: relative
+}
+
+ul.ul-dates-gray div.dates span:first-child,
+ul.ul-dates div.dates span:first-child {
+    -webkit-box-shadow: 0 2px 6px -3px rgba(68, 68, 68, 0.5);
+    box-shadow: 0 2px 6px -3px rgba(68, 68, 68, 0.5);
+    z-index: 3;
+    position: relative
+}
+
+ul.ul-dates div.content,
+ul.ul-dates-gray div.content {
+    margin-left: 90px;
+    min-height: 70px;
+    padding-top: 10px;
+    text-align: left
+}
+
+ul.ul-dates div.content h4,
+ul.ul-dates-gray div.content h4 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -10px
+}
+
+ul.ul-dates div.content p,
+ul.ul-dates-gray div.content p {
+    font-size: 13px;
+    margin-top: -5px
+}
+
+.about .edu_apt p {
+    margin: 0 0 10px;
+    text-align: left
+}
+
+.about .degree,
+.about .dates,
+ul.ul-dates div.dates span ul.ul-card li .dy .degree ul.timeline li .date {
+    background-color: #03cc85;
+    background-color: #062f4f
+}
+
+.about .year,
+ul.ul-dates div.dates span:last-child {
+    background-color: #3a587b
+}
+
+.about .edu_apt ul.ul-card li .description p {
+    font-size: 16px;
+    margin: 0;
+    text-align: left
+}
+
+.about .edu_apt ul.ul-card li .description p.where {
+    font-weight: 300;
+    font-size: 14px
+}
+
+.about .edu_apt ul.ul-card li {
+    background-color: #fdfdfd;
+    position: relative;
+    padding: 50px 15px 20px 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    margin-left: 10px;
+    color: #333
+}
+
+.edu_apt ul.ul-dates,
+ul.ul-dates-gray {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.edu_apt ul.ul-dates li,
+.edu_apt ul.ul-dates-gray li {
+    margin-bottom: 30px
+}
+
+.edu_apt ul.ul-dates div.dates,
+ul.ul-dates-gray div.dates {
+    float: left;
+    width: 75px
+}
+
+.awards {
+    margin-top: -50px
+}
+
+.about .award {
+    margin: 0;
+    margin-bottom: 1px;
+    background: #03cc85;
+    background: #062f4f;
+    color: #fff;
+    border-width: medium;
+    border-left-color: white
+}
+
+.about .awards .dy {
+    top: 1px;
+    margin-left: 10px
+}
+
+.award {
+    background: #fdfdfd;
+    border-left: 10px solid;
+    font-size: 16px;
+    -webkit-box-shadow: 0 3px 3px -3px #ccc;
+    box-shadow: 0 3px 3px -3px #ccc;
+    border-radius: 3px;
+    border-left-color: #03cc85;
+    color: #777;
+    font-size: 15px
+}
+
+.award .year {
+    background-color: transparent;
+    padding-right: 10px
+}
+
+.award .description {
+    background: white;
+    color: black
+}
+
+.padding-right {
+    padding-right: 10px
+}
+
+.col-container {
+    display: table;
+    width: 100%
+}
+
+.col {
+    display: table-cell
+}
+
+footer p {
+    line-height: 1.5rem
+}
+
+footer .address {
+    margin: 0;
+    padding-top: 15px;
+    margin-left: -10px
+}
+
+footer.page-footer {
+    margin: 0;
+    box-shadow: 0 -1px 2px #0000001a;
+    background-color: #525151db;
+    background-color: #525151;
+    background-color: #333
+}
+
+footer p,
+footer .text {
+    color: white !important;
+    text-align: left;
+    font-size: 12px
+}
