@@ -108,7 +108,7 @@ function f_switchContent(b, a) {
         .load("people.html", function () {
           $(".parallax").parallax();
           data = get_people_data();
-          const len_per_page=10
+          const len_per_page = 10;
           f_people(data, 1, len_per_page);
           f_pagination(data, len_per_page);
         })
@@ -151,13 +151,22 @@ function f_people(data, page, len_per_page = 10) {
   $parent.empty();
   data_in_page = [[...data[0].slice(len_per_page * (page - 1), len_per_page * page)]];
   data_in_page.map(function (c) {
-    $elm = $(".people_list .sample-card");
+    if ($(window).width() > 600) {
+      $elm = $(".people_list .sample-card-desktop");
+    } else {
+      $elm = $(".people_list .sample-card-mobile");
+    };
 
     $.each(c, function (d, e) {
       $clone = $elm.clone();
       degree = e[P_DEGREE];
       degree_type_class = degree.toLowerCase();
-      $clone.removeClass("sample-card hide");
+      if ($(window).width() > 600) {
+        $clone.removeClass("sample-card-desktop hide");
+      }
+      else {
+        $clone.removeClass("sample-card-mobile hide");
+      };
       $clone.addClass("people-item-" + d);
       $clone.addClass("people-" + degree_type_class);
       $clone.find(".name_email .name").html(e[P_NAME]);
@@ -170,9 +179,9 @@ function f_people(data, page, len_per_page = 10) {
         $clone.find(".year").html(year).removeClass("hide");
       }
       //   append enough empty string to the description if the description is less than 150 characters
-      if (e[P_DESCRIPTION].length < 150) {
-        e[P_DESCRIPTION] += EMPTY_STRING.repeat(150 - e[P_DESCRIPTION].length);
-      }
+      // if (e[P_DESCRIPTION].length < 150) {
+      //   e[P_DESCRIPTION] += EMPTY_STRING.repeat(150 - e[P_DESCRIPTION].length);
+      // }
       $clone.find(".description p").html(e[P_DESCRIPTION]);
       $clone.find(".face img").attr("src", a + e[P_IMAGE]);
       major = "";
@@ -186,7 +195,7 @@ function f_people(data, page, len_per_page = 10) {
   });
 }
 
-function f_pagination(data, len_per_page=10) {
+function f_pagination(data, len_per_page = 10) {
   total_number_of_people = data[0].length;
   max_page_number = Math.ceil(total_number_of_people / len_per_page);
   $prev_page_btn = $(".people_pagination .prevPage")

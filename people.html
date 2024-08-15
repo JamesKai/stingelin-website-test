@@ -7,10 +7,10 @@
       <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
     </div>
     <div class="container" style="display: flex; flex-direction: column;">
-      <div class="people_pagination">
+      <div class="people_pagination" style="align-self: flex-end;">
         <ul class="pagination">
           <div class="prevPage">
-            <</div>
+            < </div>
               <div class="currentPage">1</div>
               <div class="nextPage">></div>
         </ul>
@@ -19,41 +19,82 @@
         style="display:flex; flex-direction: column; border-top:2px solid rgb(167, 167, 167); margin-top: 5px;">
         <div class="row">
           <div class="col s12 center" style="display:flex">
-            <div class="wrapper">
-              <ul class="ul-card" id="peopleList"></ul>
+            <div class="wrapper"">
+              <ul class=" ul-card" id="peopleList">
+              </ul>
             </div>
           </div>
         </div>
-        <li class="sample-card hide">
-          <!-- <div class="row"> -->
-          <div class="people_card" style="display: flex; flex-direction:row; align-items: flex-start; column-gap: 3%; justify-content: space-between;">
-            <div style="display: flex; flex-direction:row; align-items: center; column-gap: 3%;">
+        <li class="sample-card-desktop hide">
+          <div class="row">
+            <div class="people_card"
+              style="display: flex; flex-direction:row; align-items: flex-start; column-gap: 3%; justify-content: space-between;">
+              <div style="display: flex; flex-direction:row; align-items: center; column-gap: 3%;">
+                <div class="face">
+                  <img src="img/people/tmp_people.jpg" alt="" class="left circle"
+                    style="width: 100px; object-fit: contain;">
+                </div>
+                <div class="" style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 10px;">
+                  <div class="name_email" style="padding: 0; margin: 0;">
+                    <span class="left name">First Last</span>
+                    <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Bla bla bla
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="highlight"
+                  style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 3px; justify-items: flex-start; width:100px">
+                  <span class="degree right" style="margin: 0; padding: 5px; font-size: smaller;">MSE, Undergrad</span>
+                  <span class="year right hide" style="margin: 0; padding: 5px; font-size: smaller;">Present –
+                    yyyy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sample-card-mobile hide">
+          <div class="row">
+            <div class="people_card"
+              style="display: flex; flex-direction:column; align-items: center;  row-gap: 5px; justify-content: space-around;">
               <div class="face">
                 <img src="img/people/tmp_people.jpg" alt="" class="left circle"
-                  style="width: 100px; object-fit: contain;">
+                  style="width: 150px; object-fit: contain;">
               </div>
-              <div class=""
-                style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 10px;">
-                <div class="name_email" style="padding: 0; margin: 0;">
-                  <span class="left name">First Last</span>
-                  <br /><a class="left email" href="mailto:noreply@gatech.edu">burdell@gatech.edu</a>
+              <div class="name_email" style="padding: 0; margin: 0;">
+                <span class="left name">First Last</span>
+              </div>
+              <div class="name_email" style="padding: 0; margin: 0;">
+                <a class="left email" href="mailto:noreply@gatech.edu"
+                  style="padding: 0; margin: 0;">burdell@gatech.edu</a>
+              </div>
+              <div style="height: 5px;">
+              </div>
+              <div>
+                <div class="highlight"
+                  style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 3px; justify-items: flex-start;">
+                  <span class="degree right" style="margin: 0; padding: 5px; font-size: smaller;">MSE,
+                    Undergrad</span>
+                  <span class="year right hide" style="margin: 0; padding: 5px; font-size: smaller;">Present –
+                    yyyy</span>
                 </div>
-                <div class="description">
-                  <p>
-                    Bla bla bla
-                  </p>
-                </div>
               </div>
-            </div>
-            <div>
-              <div class="highlight"
-                style="display: flex; flex-direction: column; padding: 0; margin: 0; row-gap: 3px; justify-items: flex-start; width:100px">
-                <span class="degree right" style="margin: 0; padding: 5px; font-size: smaller;">MSE, Undergrad</span>
-                <span class="year right hide" style="margin: 0; padding: 5px; font-size: smaller;">Present – yyyy</span>
+              <div style="height: 10px;">
               </div>
+              <div class="description">
+                <p>
+                  Bla bla bla
+                </p>
+              </div>
+
             </div>
+          </div>
+        </li>
       </div>
     </div>
   </div>
-
 </section>
