@@ -108,9 +108,10 @@ function f_switchContent(b, a) {
         .load("people.html", function () {
           $(".parallax").parallax();
           data = get_people_data();
-          const len_per_page = 10;
+          const len_per_page = 5;
           f_people(data, 1, len_per_page);
           f_pagination(data, len_per_page);
+          f_people_dropdown(data);
         })
         .hide()
         .fadeIn();
@@ -142,10 +143,33 @@ const P_MAJOR = "major";
 const P_DESCRIPTION = "description";
 const P_EMAIL = "email";
 const P_IMAGE = "img";
+function f_people_dropdown(data) {
+  $(".people_type_content li").on("click", function () {
+    let name = $(this).find("a").text();
+    $(".people_type .people_type_nav").html(name);
+    type = $(this).find("a").attr("type");
+    type = type.split(" ");
+    data_degree = filter_data(data, type[0], "");
+    f_people(data_degree, 1, len_per_page = 5);
+    reset_pagination();
+    f_pagination(data_degree, len_per_page = 5);
+  });
+  f_dropdown(".people_type .dropdown-trigger");
+}
+function filter_data(data, degree = "", major = "") {
+  data_filtered = [...data];
+  if (degree !== "all") {
+    degree !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["degree"].toLowerCase() === degree)]]);
+  }
+  if (major !== "all") {
+    major !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["major"].toLowerCase() === major)]]);
+  }
+  return data_filtered;
+}
+
 function f_people(data, page, len_per_page = 10) {
   const a = "img/people/";
   const b = "mailto:";
-  const EMPTY_STRING = "&nbsp";
   $parent = $(".people_list .ul-card");
   $wrapper = $(".people_list .row");
   $parent.empty();
@@ -178,10 +202,7 @@ function f_people(data, page, len_per_page = 10) {
       if (year != undefined && year.length > 0) {
         $clone.find(".year").html(year).removeClass("hide");
       }
-      //   append enough empty string to the description if the description is less than 150 characters
-      // if (e[P_DESCRIPTION].length < 150) {
-      //   e[P_DESCRIPTION] += EMPTY_STRING.repeat(150 - e[P_DESCRIPTION].length);
-      // }
+
       $clone.find(".description p").html(e[P_DESCRIPTION]);
       $clone.find(".face img").attr("src", a + e[P_IMAGE]);
       major = "";
@@ -223,6 +244,12 @@ function f_pagination(data, len_per_page = 10) {
   });
 }
 
+function reset_pagination() {
+  $current_page_number = $(".people_pagination .currentPage").text(1);
+  $prev_page_btn = $(".people_pagination .prevPage").off("click");
+  $next_page_btn = $(".people_pagination .nextPage").off("click");
+}
+
 function get_people_data() {
   data = [];
   $.getJSON("people.json", function (c) {
@@ -261,6 +288,7 @@ function f_publication() {
   console.log("publication : ");
   $(".pub_type_content li").on("click", function () {
     let name = $(this).find("a").text();
+    console.log(name)
     $(".pub_type .pub_type_nav").html(name);
     type = $(this).find("a").attr("type");
     type = type.split(" ");

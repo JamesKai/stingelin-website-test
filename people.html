@@ -7,13 +7,30 @@
       <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
     </div>
     <div class="container" style="display: flex; flex-direction: column;">
-      <div class="people_pagination" style="align-self: flex-end;">
-        <ul class="pagination">
-          <div class="prevPage">
-            < </div>
-              <div class="currentPage">1</div>
-              <div class="nextPage">></div>
-        </ul>
+      <div style="display: flex; flex-direction:row; justify-content: space-between;">
+        <div class="section people-list" style="align-self: flex-end; padding: 0;">
+          <div class="col s12 center">
+            <div class="right-align people_type">
+              <a class='dropdown-trigger people_type_nav btn' name="people_type" href="#people"
+                data-target='people_type_nav'>All People</a>
+              <ul id='people_type_nav' class='people_type_content dropdown-content'>
+                <li><a href="#people" type="all">All People</a></li>
+                <li><a href="#people" type="phd">PhD</a></li>
+                <li><a href="#people" type="ms">MS</a></li>
+                <li><a href="#people" type="postdoc">Postdoc</a></li>
+                <li><a href="#people" type="visiting">Visiting</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="people_pagination" style="align-self: flex-end; padding-right: 0;">
+          <ul class="pagination">
+            <div class="prevPage">
+              < </div>
+                <div class="currentPage">1</div>
+                <div class="nextPage">></div>
+          </ul>
+        </div>
       </div>
       <div class="section people_list"
         style="display:flex; flex-direction: column; border-top:2px solid rgb(167, 167, 167); margin-top: 5px;">

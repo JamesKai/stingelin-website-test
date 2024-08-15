@@ -395,6 +395,22 @@ nav ul a,
     background-color: #062f4f
 }
 
+.people-list .people_type a {
+    width: 120px
+}
+
+.people-list .people_type .btn {
+    background-color: #062f4f
+}
+
+.people-list .people_type_nav{
+    font-size: small;
+}
+
+.people-list .people_type a{
+    font-size: small;
+}
+
 .pub-list p {
     text-align: left
 }
