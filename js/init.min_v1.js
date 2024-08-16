@@ -12,6 +12,7 @@ var PROJECT = "project";
 var IMG = "img";
 var TITLE = "title";
 var DESCRIPTION = "description";
+const LEN_PER_PAGE = 10;
 
 $.ajaxSetup({
   async: false
@@ -108,10 +109,10 @@ function f_switchContent(b, a) {
         .load("people.html", function () {
           $(".parallax").parallax();
           data = get_people_data();
-          const len_per_page = 5;
-          f_people(data, 1, len_per_page);
-          f_pagination(data, len_per_page);
+          f_people(data, 1, LEN_PER_PAGE);
+          f_pagination(data, LEN_PER_PAGE);
           f_people_dropdown(data);
+          f_people_major_dropdown(data);
         })
         .hide()
         .fadeIn();
@@ -149,20 +150,38 @@ function f_people_dropdown(data) {
     $(".people_type .people_type_nav").html(name);
     type = $(this).find("a").attr("type");
     type = type.split(" ");
-    data_degree = filter_data(data, type[0], "");
-    f_people(data_degree, 1, len_per_page = 5);
+    major = $(".people_major .people_major_nav").text().split(" ")[0].toLowerCase();
+    data_degree = filter_data(data, type[0], major);
+    f_people(data_degree, 1, len_per_page = LEN_PER_PAGE);
     reset_pagination();
-    f_pagination(data_degree, len_per_page = 5);
+    f_pagination(data_degree, len_per_page = LEN_PER_PAGE);
   });
   f_dropdown(".people_type .dropdown-trigger");
 }
+
+function f_people_major_dropdown(data) {
+  $(".people_major_content li").on("click", function () {
+    let name = $(this).find("a").text();
+    $(".people_major .people_major_nav").html(name);
+    major = $(this).find("a").attr("type");
+
+    type = $(".people_type .people_type_nav").text().split(" ")[0].toLowerCase();
+    data_major = filter_data(data, type, major);
+    f_people(data_major, 1, len_per_page = LEN_PER_PAGE);
+    reset_pagination();
+    f_pagination(data_major, len_per_page = LEN_PER_PAGE);
+  });
+  f_dropdown(".people_major .dropdown-trigger");
+}
+
 function filter_data(data, degree = "", major = "") {
   data_filtered = [...data];
   if (degree !== "all") {
-    degree !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["degree"].toLowerCase() === degree)]]);
+    degree !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["degree"].toLowerCase().includes(degree))]]);
   }
   if (major !== "all") {
-    major !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["major"].toLowerCase() === major)]]);
+    console.log(data_filtered);
+    major !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["major"].toLowerCase().includes(major))]]);
   }
   return data_filtered;
 }
@@ -170,6 +189,9 @@ function filter_data(data, degree = "", major = "") {
 function f_people(data, page, len_per_page = 10) {
   const a = "img/people/";
   const b = "mailto:";
+  let window_height = $(window).height();
+  let window_width = $(window).width();
+  console.log("window_height: " + window_height);
   $parent = $(".people_list .ul-card");
   $wrapper = $(".people_list .row");
   $parent.empty();
@@ -224,9 +246,7 @@ function f_pagination(data, len_per_page = 10) {
   $current_page_number = $(".people_pagination .currentPage")
 
   // Next page
-  $next_page_btn.on("click", function (e) {
-    e.preventDefault()
-    // Get current page Number
+  $next_page_btn.on("click", function ($e) {
     let curr_page = parseInt($current_page_number.text());
     if (curr_page < max_page_number) {
       f_people(data, curr_page + 1, len_per_page = len_per_page);
@@ -234,8 +254,7 @@ function f_pagination(data, len_per_page = 10) {
     }
   });
   // Previous page
-  $prev_page_btn.on("click", function (e) {
-    e.preventDefault()
+  $prev_page_btn.on("click", function ($e) {
     let curr_page = parseInt($current_page_number.text());
     if (curr_page > 1) {
       f_people(data, curr_page - 1, len_per_page = len_per_page);

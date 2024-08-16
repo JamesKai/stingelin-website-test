@@ -1,4 +1,4 @@
-<section name="people" class="people">
+<section name="people" class="people" >
   <div style="display: flex; flex-direction: column;">
     <div class="parallax-container">
       <div class="container">
@@ -7,18 +7,32 @@
       <div class="parallax"><img src="img/banner/people_banner_2022.jpg"></div>
     </div>
     <div class="container" style="display: flex; flex-direction: column;">
-      <div style="display: flex; flex-direction:row; justify-content: space-between;">
+      <div style="display: flex; flex-direction:row; justify-content: space-between; ">
         <div class="section people-list" style="align-self: flex-end; padding: 0;">
           <div class="col s12 center">
             <div class="right-align people_type">
               <a class='dropdown-trigger people_type_nav btn' name="people_type" href="#people"
-                data-target='people_type_nav'>All People</a>
+                data-target='people_type_nav'>All Degrees</a>
               <ul id='people_type_nav' class='people_type_content dropdown-content'>
                 <li><a href="#people" type="all">All People</a></li>
+                <li><a href="#people" type="postdoc">Postdoc</a></li>
                 <li><a href="#people" type="phd">PhD</a></li>
                 <li><a href="#people" type="ms">MS</a></li>
-                <li><a href="#people" type="postdoc">Postdoc</a></li>
+                <li><a href="#people" type="undergrad">Undergrad</a></li>
                 <li><a href="#people" type="visiting">Visiting</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section people-list" style="align-self: flex-end; padding: 0;">
+          <div class="col s12 center">
+            <div class="right-align people_major">
+              <a class='dropdown-trigger people_major_nav btn' name="people_major" href="#people"
+                data-target='people_major_nav'>All Majors</a>
+              <ul id='people_major_nav' class='people_major_content dropdown-content'>
+                <li><a href="#people" type="all">All Majors</a></li>
+                <li><a href="#people" type="mse">MSE</a></li>
+                <li><a href="#people" type="chbe">ChBE</a></li>
               </ul>
             </div>
           </div>

@@ -40,24 +40,24 @@ $(document).ready(function () {
 	console.log("hash : " + hash + " | child: " + hash_child)
 	f_switchContent(hash, hash_child);
 	// f_switchContent(ABOUT);f
-	f_scrollToTop();
+	// f_scrollToTop();
 });
 
-function f_scrollToTop() {
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$('.scrollTop').fadeIn();
-		} else {
-			$('.scrollTop').fadeOut();
-		}
-	});
-	$('.scrollTop').click(function () {
-		$("html, body").animate({
-			scrollTop: 0
-		}, 600);
-		return false;
-	});
-}
+// function f_scrollToTop() {
+// 	$(window).scroll(function () {
+// 		if ($(this).scrollTop() > 100) {
+// 			$('.scrollTop').fadeIn();
+// 		} else {
+// 			$('.scrollTop').fadeOut();
+// 		}
+// 	});
+// 	$('.scrollTop').click(function () {
+// 		$("html, body").animate({
+// 			scrollTop: 0
+// 		}, 600);
+// 		return false;
+// 	});
+// }
 
 function f_initNav() {
 	$(".nav_desktop .dropdown-trigger").dropdown({
@@ -88,7 +88,7 @@ function f_autoplay_carousel() {
 function f_switchContent(parentName, childName) {
 	if (parentName == current) {
 		if (childName != current_childName) {
-			f_scrollToChild(childName);
+			// f_scrollToChild(childName);
 		}
 		return;
 	}
@@ -131,7 +131,7 @@ function f_switchContent(parentName, childName) {
 	current_childName = childName;
 
 	if (childName == "") {
-		$('.scrollTop').click()
+		// $('.scrollTop').click()
 	}
 	$(".nav_mobile").sidenav("close");
 	f_initNav();
@@ -292,7 +292,7 @@ function f_research(childName) {
 	    gutter: '.gutter-sizer',
 	    percentPosition: true
 	  });
-		f_scrollToChild(childName);
+		// f_scrollToChild(childName);
 	});
 
 	// f_scrollToChild(childName);
@@ -386,13 +386,13 @@ function f_research_funding(){
 // Helper
 // scroll to childName
 function f_scrollToChild(childName) {
-	if (childName) {
-		console.log("scrolling to childName :" + childName);
-		$('html, body').animate({
-			scrollTop: $("." + childName).offset().top - 50
-		}, 'slow');
-		current_childName = childName;
-	}
+	// if (childName) {
+	// 	console.log("scrolling to childName :" + childName);
+	// 	$('html, body').animate({
+	// 		scrollTop: $("." + childName).offset().top - 50
+	// 	}, 'slow');
+	// 	current_childName = childName;
+	// }
 }
 
 function f_dropdown(className){
