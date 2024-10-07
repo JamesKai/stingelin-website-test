@@ -193,6 +193,7 @@ function f_people(data, page, len_per_page = 10) {
   $wrapper = $(".people_list .row");
   $parent.empty();
   data_in_page = [[...data[0].slice(len_per_page * (page - 1), len_per_page * page)]];
+  console.log(data_in_page);
   data_in_page.map(function (c) {
     if ($(window).width() > 600) {
       $elm = $(".people_list .sample-card-desktop");
@@ -235,6 +236,56 @@ function f_people(data, page, len_per_page = 10) {
   });
 }
 
+function render_pagination(people_data, page_data, len_per_page = 10) {
+  const a = "img/people/";
+  const b = "mailto:";
+  let window_width = $(window).width();
+  data_in_page = [page_data.map((p) => people_data[0][p-1])];
+  page_html = "";
+  data_in_page.map(function (c) {
+    if (window_width > 600) {
+      $elm = $(".people_list .sample-card-desktop");
+    } else {
+      $elm = $(".people_list .sample-card-mobile");
+    };
+
+    $.each(c, function (d, e) {
+      $clone = $elm.clone();
+      degree = e[P_DEGREE];
+      degree_type_class = degree.toLowerCase();
+      if ($(window).width() > 600) {
+        $clone.removeClass("sample-card-desktop hide");
+      }
+      else {
+        $clone.removeClass("sample-card-mobile hide");
+      };
+      $clone.addClass("people-item-" + d);
+      $clone.addClass("people-" + degree_type_class);
+      $clone.find(".name_email .name").html(e[P_NAME]);
+      $clone
+        .find(".name_email .email")
+        .attr("href", b + e[P_EMAIL])
+        .html(e[P_EMAIL]);
+      year = e[P_YEAR];
+      if (year != undefined && year.length > 0) {
+        $clone.find(".year").html(year).removeClass("hide");
+      }
+
+      $clone.find(".description p").html(e[P_DESCRIPTION]);
+      $clone.find(".face img").attr("src", a + e[P_IMAGE]);
+      major = "";
+      if (e[P_MAJOR] != undefined && e[P_MAJOR].length > 0) {
+        major = e[P_MAJOR] + ", ";
+      }
+      degree_type = major + degree;
+      $clone.find(".degree").addClass(degree_type_class).html(degree_type);
+      page_html+='<li>'+$clone.html()+'</li>';
+    });
+
+  });
+  return page_html;
+} 
+
 function demo_pagination(people_data, len_per_page = 10) {
   var total_number_of_people = people_data[0].length;
   var page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
@@ -242,16 +293,12 @@ function demo_pagination(people_data, len_per_page = 10) {
     dataSource: page_arr,
     callback: function(data, pagination) {
         var curr_page = pagination.pageNumber;
-        f_people(people_data, curr_page, len_per_page = len_per_page);
+        page_html = render_pagination(people_data, data, len_per_page = len_per_page);
+        $parent = $(".people_list .ul-card");
+        $parent.html(page_html);
+        // f_people(people_data, curr_page, len_per_page);
     }
   })
-  // $('#people-pagination-top').pagination({
-  //   dataSource: page_arr,
-  //   callback: function(data, pagination) {
-  //       var curr_page = pagination.pageNumber;
-  //       f_people(people_data, curr_page, len_per_page = len_per_page);
-  //   }
-  // })
 }
 
 function reset_pagination() {
