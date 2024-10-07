@@ -109,8 +109,9 @@ function f_switchContent(b, a) {
         .load("people.html", function () {
           $(".parallax").parallax();
           data = get_people_data();
-          f_people(data, 1, LEN_PER_PAGE);
-          f_pagination(data, LEN_PER_PAGE);
+          // f_people(data, 1, LEN_PER_PAGE);
+          // f_pagination(data, LEN_PER_PAGE);
+          demo_pagination(data, LEN_PER_PAGE);
           f_people_dropdown(data);
           f_people_major_dropdown(data);
         })
@@ -152,9 +153,7 @@ function f_people_dropdown(data) {
     type = type.split(" ");
     major = $(".people_major .people_major_nav").text().split(" ")[0].toLowerCase();
     data_degree = filter_data(data, type[0], major);
-    f_people(data_degree, 1, len_per_page = LEN_PER_PAGE);
-    reset_pagination();
-    f_pagination(data_degree, len_per_page = LEN_PER_PAGE);
+    demo_pagination(data_degree, LEN_PER_PAGE);
   });
   f_dropdown(".people_type .dropdown-trigger");
 }
@@ -167,9 +166,7 @@ function f_people_major_dropdown(data) {
 
     type = $(".people_type .people_type_nav").text().split(" ")[0].toLowerCase();
     data_major = filter_data(data, type, major);
-    f_people(data_major, 1, len_per_page = LEN_PER_PAGE);
-    reset_pagination();
-    f_pagination(data_major, len_per_page = LEN_PER_PAGE);
+    demo_pagination(data_major, LEN_PER_PAGE);
   });
   f_dropdown(".people_major .dropdown-trigger");
 }
@@ -238,29 +235,23 @@ function f_people(data, page, len_per_page = 10) {
   });
 }
 
-function f_pagination(data, len_per_page = 10) {
-  total_number_of_people = data[0].length;
-  max_page_number = Math.ceil(total_number_of_people / len_per_page);
-  $prev_page_btn = $(".people_pagination .prevPage")
-  $next_page_btn = $(".people_pagination .nextPage")
-  $current_page_number = $(".people_pagination .currentPage")
-
-  // Next page
-  $next_page_btn.on("click", function ($e) {
-    let curr_page = parseInt($current_page_number.text());
-    if (curr_page < max_page_number) {
-      f_people(data, curr_page + 1, len_per_page = len_per_page);
-      $current_page_number.text(curr_page + 1);
+function demo_pagination(people_data, len_per_page = 10) {
+  var total_number_of_people = people_data[0].length;
+  var page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
+  $('#people-pagination-bottom').pagination({
+    dataSource: page_arr,
+    callback: function(data, pagination) {
+        var curr_page = pagination.pageNumber;
+        f_people(people_data, curr_page, len_per_page = len_per_page);
     }
-  });
-  // Previous page
-  $prev_page_btn.on("click", function ($e) {
-    let curr_page = parseInt($current_page_number.text());
-    if (curr_page > 1) {
-      f_people(data, curr_page - 1, len_per_page = len_per_page);
-      $current_page_number.text(curr_page - 1);
-    }
-  });
+  })
+  // $('#people-pagination-top').pagination({
+  //   dataSource: page_arr,
+  //   callback: function(data, pagination) {
+  //       var curr_page = pagination.pageNumber;
+  //       f_people(people_data, curr_page, len_per_page = len_per_page);
+  //   }
+  // })
 }
 
 function reset_pagination() {

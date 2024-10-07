@@ -606,7 +606,7 @@ nav ul a,
 
 .people_pagination .pagination div {
     margin: 0 3px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #062f4f;
     color: white;
     padding: 5px 10px;
@@ -614,7 +614,9 @@ nav ul a,
     cursor: pointer;
 }
 
-
+.pagination_btn_clicked {
+    background-color: rgb(19, 70, 121) !important
+}
 
 @media only screen and (max-width:600px) {
     .people_card .name_email {
