@@ -3,6 +3,13 @@ var ABOUT = "about";
 var RESEARCH = "research";
 var PUBLICATION = "publication";
 var PEOPLE = "people";
+var PEOPLE_CURRENT = "current-member"
+var PEOPLE_POSTDOC = "postdoc";
+var PEOPLE_GRADUATE = "graduate";
+var PEOPLE_GRADUATE_MS = "ms";
+var PEOPLE_GRADUATE_PHD = "phd";
+var PEOPLE_UNDERGRAD = "undergrad";
+var PEOPLE_ALUMNI= "alumni";
 var CONTACT = "contact";
 var current = "";
 var current_childName = "";
@@ -22,12 +29,16 @@ $(document).ready(function () {
   console.log("ready!");
   $(".nav_mobile").sidenav({ draggable: true });
   $(".nav-item").on("click", function () {
-    let name = $(this).attr("name");
+    var name = $(this).attr("name");
     f_switchContent(name, "");
   });
   $(".research_nav_item").on("click", function () {
-    let name = $(this).attr("name");
+    var name = $(this).attr("name");
     f_switchContent(RESEARCH, name);
+  });
+  $(".people_nav_item").on("click", function () {
+    var name = $(this).attr("name");
+    f_switchContent(PEOPLE, name);
   });
   var a = window.location.hash.substr(1);
   hash_child = "";
@@ -77,15 +88,14 @@ function f_autoplay_carousel() {
   setTimeout(f_autoplay_carousel, rotate_time);
 }
 function f_switchContent(b, a) {
-  if (b == current) {
+  // scrolling to the specific research project
+  if (b == RESEARCH && b == current) {
     if (a != current_childName) {
       f_scrollToChild(a);
     }
     return;
   }
   $(".content").empty();
-  var c = "slow";
-  var c = 10;
   switch (b) {
     case HOME:
       $(".content").load("home.html", function () {
@@ -109,11 +119,20 @@ function f_switchContent(b, a) {
         .load("people.html", function () {
           $(".parallax").parallax();
           data = get_people_data();
-          // f_people(data, 1, LEN_PER_PAGE);
-          // f_pagination(data, LEN_PER_PAGE);
-          demo_pagination(data, LEN_PER_PAGE);
-          f_people_dropdown(data);
-          f_people_major_dropdown(data);
+          if (a == PEOPLE_CURRENT) {
+            data_filtered = filter_current_people(data);
+          } else if (a == PEOPLE_POSTDOC) {
+            data_filtered = filter_postdocs(data);
+          } else if(a == PEOPLE_GRADUATE){
+            data_filtered = filter_graduates(data);
+          } else if (a == PEOPLE_UNDERGRAD) {
+            data_filtered = filter_undergrads(data);
+          } else if (a == PEOPLE_ALUMNI) {
+            data_filtered = filter_alumni(data);
+          } else {
+            data_filtered = data
+          }
+          init_people_pagination(data_filtered, LEN_PER_PAGE);
         })
         .hide()
         .fadeIn();
@@ -129,11 +148,14 @@ function f_switchContent(b, a) {
     default:
       break;
   }
+
+  // update the current research project for determining scrolling location 
   current = b;
   current_childName = a;
   if (a == "") {
     $(".scrollTop").click();
   }
+
   $(".nav_mobile").sidenav("close");
   f_initNav();
 }
@@ -145,98 +167,43 @@ const P_MAJOR = "major";
 const P_DESCRIPTION = "description";
 const P_EMAIL = "email";
 const P_IMAGE = "img";
-function f_people_dropdown(data) {
-  $(".people_type_content li").on("click", function () {
-    let name = $(this).find("a").text();
-    $(".people_type .people_type_nav").html(name);
-    type = $(this).find("a").attr("type");
-    type = type.split(" ");
-    major = $(".people_major .people_major_nav").text().split(" ")[0].toLowerCase();
-    data_degree = filter_data(data, type[0], major);
-    demo_pagination(data_degree, LEN_PER_PAGE);
-  });
-  f_dropdown(".people_type .dropdown-trigger");
-}
 
-function f_people_major_dropdown(data) {
-  $(".people_major_content li").on("click", function () {
-    let name = $(this).find("a").text();
-    $(".people_major .people_major_nav").html(name);
-    major = $(this).find("a").attr("type");
-
-    type = $(".people_type .people_type_nav").text().split(" ")[0].toLowerCase();
-    data_major = filter_data(data, type, major);
-    demo_pagination(data_major, LEN_PER_PAGE);
-  });
-  f_dropdown(".people_major .dropdown-trigger");
-}
-
-function filter_data(data, degree = "", major = "") {
+function filter_people_by_degree(data, degree = "") {
   data_filtered = [...data];
   if (degree !== "all") {
     degree !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["degree"].toLowerCase().includes(degree))]]);
   }
-  if (major !== "all") {
-    console.log(data_filtered);
-    major !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["major"].toLowerCase().includes(major))]]);
-  }
   return data_filtered;
 }
 
-function f_people(data, page, len_per_page = 10) {
-  const a = "img/people/";
-  const b = "mailto:";
-  let window_height = $(window).height();
-  let window_width = $(window).width();
-  console.log("window_height: " + window_height);
-  $parent = $(".people_list .ul-card");
-  $wrapper = $(".people_list .row");
-  $parent.empty();
-  data_in_page = [[...data[0].slice(len_per_page * (page - 1), len_per_page * page)]];
-  console.log(data_in_page);
-  data_in_page.map(function (c) {
-    if ($(window).width() > 600) {
-      $elm = $(".people_list .sample-card-desktop");
-    } else {
-      $elm = $(".people_list .sample-card-mobile");
-    };
-
-    $.each(c, function (d, e) {
-      $clone = $elm.clone();
-      degree = e[P_DEGREE];
-      degree_type_class = degree.toLowerCase();
-      if ($(window).width() > 600) {
-        $clone.removeClass("sample-card-desktop hide");
-      }
-      else {
-        $clone.removeClass("sample-card-mobile hide");
-      };
-      $clone.addClass("people-item-" + d);
-      $clone.addClass("people-" + degree_type_class);
-      $clone.find(".name_email .name").html(e[P_NAME]);
-      $clone
-        .find(".name_email .email")
-        .attr("href", b + e[P_EMAIL])
-        .html(e[P_EMAIL]);
-      year = e[P_YEAR];
-      if (year != undefined && year.length > 0) {
-        $clone.find(".year").html(year).removeClass("hide");
-      }
-
-      $clone.find(".description p").html(e[P_DESCRIPTION]);
-      $clone.find(".face img").attr("src", a + e[P_IMAGE]);
-      major = "";
-      if (e[P_MAJOR] != undefined && e[P_MAJOR].length > 0) {
-        major = e[P_MAJOR] + ", ";
-      }
-      degree_type = major + degree;
-      $clone.find(".degree").addClass(degree_type_class).html(degree_type);
-      $parent.append($clone);
-    });
-  });
+function filter_current_people(data) {
+  data_filtered = [...data];
+  return [[...data_filtered[0].filter((p) => !p["degree"].toLowerCase().includes(PEOPLE_ALUMNI))]]
 }
 
-function render_pagination(people_data, page_data, len_per_page = 10) {
+function filter_postdocs(data) {
+  current_all = filter_current_people(data);
+  return filter_people_by_degree(current_all, PEOPLE_POSTDOC);
+}
+
+function filter_graduates(data) {
+  current_all = filter_current_people(data);
+  ms_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_MS);
+  phd_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_PHD);
+  return all_grads = [[...phd_students[0], ...ms_students[0]]];
+}
+
+function filter_undergrads(data) {
+  current_all = filter_current_people(data);
+  return filter_people_by_degree(current_all, PEOPLE_UNDERGRAD);
+}
+
+function filter_alumni(data) {
+  alumni = filter_people_by_degree(data, PEOPLE_ALUMNI);
+  return alumni;
+}
+
+function render_people_pagination(people_data, page_data, len_per_page = 10) {
   const a = "img/people/";
   const b = "mailto:";
   let window_width = $(window).width();
@@ -281,30 +248,21 @@ function render_pagination(people_data, page_data, len_per_page = 10) {
       $clone.find(".degree").addClass(degree_type_class).html(degree_type);
       page_html+='<li>'+$clone.html()+'</li>';
     });
-
   });
   return page_html;
 } 
 
-function demo_pagination(people_data, len_per_page = 10) {
+function init_people_pagination(people_data, len_per_page = 10) {
   var total_number_of_people = people_data[0].length;
   var page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
   $('#people-pagination-bottom').pagination({
     dataSource: page_arr,
     callback: function(data, pagination) {
-        var curr_page = pagination.pageNumber;
-        page_html = render_pagination(people_data, data, len_per_page = len_per_page);
+        page_html = render_people_pagination(people_data, data, len_per_page = len_per_page);
         $parent = $(".people_list .ul-card");
         $parent.html(page_html);
-        // f_people(people_data, curr_page, len_per_page);
     }
   })
-}
-
-function reset_pagination() {
-  $current_page_number = $(".people_pagination .currentPage").text(1);
-  $prev_page_btn = $(".people_pagination .prevPage").off("click");
-  $next_page_btn = $(".people_pagination .nextPage").off("click");
 }
 
 function get_people_data() {

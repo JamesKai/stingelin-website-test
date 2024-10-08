@@ -52,15 +52,27 @@
             </a>
           </li>
           <li><a href="#publication" name="publication" class="nav-item">Publications</a></li>
-          <li><a href="#people" name="people" class="nav-item">People</a></li>
+          <li><a href="#people" class="nav-item dropdown-trigger people_nav_desktop" name="people"
+              data-target="people_nav_desktop">People
+              <i class="fas fa-caret-down right" style="margin-left:1px;padding-left: 10px;"></i>
+            </a>
+          </li>
         </ul>
-        <!-- Dropdown Structure -->
+        <!-- Research Dropdown Structure -->
         <ul id="research_nav_desktop" class="dropdown-content">
           <li><a href="#project-list" class="research_nav_item" name="project-list">Projects</a></li>
           <li><a href="#aff-list" class="research_nav_item" name="aff-list">Affiliations</a></li>
           <li><a href="#collab-list" class="research_nav_item" name="collab-list">Collaborations</a></li>
           <li><a href="#funding-list" class="research_nav_item" name="funding-list">Funding</a></li>
           <li><a href="#sponsor-list" class="research_nav_item" name="sponsor-list">Sponsors</a></li>
+        </ul>
+        <!-- People Dropdown Structure -->
+        <ul id="people_nav_desktop" class="dropdown-content">
+          <li><a href="#current-members" class="people_nav_item" name="current-member">Current Members</a></li>
+          <li><a href="#postdocs" class="people_nav_item" name="postdoc">Postdocs</a></li>
+          <li><a href="#graduate-students" class="people_nav_item" name="graduate">Graduate Students</a></li>
+          <li><a href="#undergrads" class="people_nav_item" name="undergrad">Undergrads</a></li>
+          <li><a href="#alumni" class="people_nav_item" name="alumni">Alumni</a></li>
         </ul>
         <!-- DESKTOP NAVIGATION END -->
       </div>
@@ -70,13 +82,16 @@
   <ul class="sidenav nav_mobile" id="mobile-demo">
     <li><a href="/" class="nav-item" name="home"><i class="fas fa-home"></i></a></li>
     <li><a href="#about" class="nav-item" name="about">Stingelin</a></li>
-    <li><a href="#research" class="nav-item dropdown-trigger research_nav_mobile" name="research"
-        data-target="research_nav_mobile">Research
+    <li><a href="#research" class="dropdown-trigger research_nav_mobile" name="research" data-target="research_nav_mobile">Research
         <i class="fas fa-caret-down right" style="margin-left:1px"></i>
       </a>
     </li>
     <li><a href="#publication" name="publication" class="nav-item">Publications</a></li>
-    <li><a href="#people" name="people" class="nav-item">People</a></li>
+    <!-- for people and research, do NOT include nav-item in the class-->
+    <li><a href="#people" class="dropdown-trigger people_nav_mobile" name="people" data-target="people_nav_mobile">People 
+        <i class="fas fa-caret-down right" style="margin-left:1px"></i>
+      </a>
+    </li>
   </ul>
   <!-- Dropdown Structure -->
   <!-- Need to have multiple dropdown because of the error in the materialzcss library -->
@@ -86,6 +101,14 @@
     <li><a href="#collab-list" class="research_nav_item" name="collab-list">Collaborations</a></li>
     <li><a href="#funding-list" class="research_nav_item" name="funding-list">Funding</a></li>
     <li><a href="#sponsor-list" class="research_nav_item" name="sponsor-list">Sponsors</a></li>
+  </ul>
+  <!-- People Dropdown Structure -->
+  <ul id="people_nav_mobile" class="dropdown-content">
+    <li><a href="#current-members" class="people_nav_item" name="current-member">Current Members</a></li>
+    <li><a href="#postdocs" class="people_nav_item" name="postdoc">Postdocs</a></li>
+    <li><a href="#graduate-students" class="people_nav_item" name="graduate">Graduate Students</a></li>
+    <li><a href="#undergrads" class="people_nav_item" name="undergrad">Undergrads</a></li>
+    <li><a href="#alumni" class="people_nav_item" name="alumni">Alumni</a></li>
   </ul>
   <!-- MOBILE NAVIGATION END -->
   <section class="content">
