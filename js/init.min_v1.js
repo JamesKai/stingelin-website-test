@@ -20,6 +20,7 @@ var IMG = "img";
 var TITLE = "title";
 var DESCRIPTION = "description";
 const LEN_PER_PAGE = 10;
+let people_pagination; // decalre the pagination object
 
 $.ajaxSetup({
   async: false
@@ -255,14 +256,47 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
 function init_people_pagination(people_data, len_per_page = 10) {
   var total_number_of_people = people_data[0].length;
   var page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
-  $('#people-pagination-bottom').pagination({
+  let $parent = $(".people_list .ul-card");
+  people_pagination = $('#people-pagination-bottom').pagination({
     dataSource: page_arr,
+    className: "paginationjs-big",
     callback: function(data, pagination) {
         page_html = render_people_pagination(people_data, data, len_per_page = len_per_page);
-        $parent = $(".people_list .ul-card");
         $parent.html(page_html);
+    },
+    afterPreviousOnClick: function() {
+      // scroll to the end of the page
+      $("html, body").scrollTop($(document).height());
+      $parent.hide().fadeIn();
+    },
+    afterPageOnClick : function() {
+      // scroll to the top of the page
+      $("html, body").scrollTop(0);
+      $parent.hide().fadeIn();
+    },
+    afterNextOnClick: function() {
+      // scroll to the top of the page
+      $("html, body").scrollTop(0);
+      // fade in the content
+      $parent.hide().fadeIn();
+    },
+  });
+  $(".people_list .ul-card").hammer().on('swiperight', function(event) {
+    // if it is not the first page, go to previous page and fade in the content
+    if (people_pagination.pagination('getCurrentPageNum') > 1) {
+      people_pagination.pagination('previous');
+      $parent.hide().fadeIn();
+      console.log('previous page');  
     }
-  })
+  }); 
+  $(".people_list .ul-card").hammer().on('swipeleft', function(event) { 
+    // if it is not the last page, go to next page and fade in the content
+    if (people_pagination.pagination('getCurrentPageNum') < people_pagination.pagination('getTotalPage')) {
+      people_pagination.pagination('next');
+      $parent.hide().fadeIn();
+      console.log('next page');  
+    }
+  }); 
 }
 
 function get_people_data() {
