@@ -1,24 +1,24 @@
-var HOME = "home";
-var ABOUT = "about";
-var RESEARCH = "research";
-var PUBLICATION = "publication";
-var PEOPLE = "people";
-var PEOPLE_CURRENT = "current-member"
-var PEOPLE_POSTDOC = "postdoc";
-var PEOPLE_GRADUATE = "graduate";
-var PEOPLE_GRADUATE_MS = "ms";
-var PEOPLE_GRADUATE_PHD = "phd";
-var PEOPLE_UNDERGRAD = "undergrad";
-var PEOPLE_ALUMNI= "alumni";
-var CONTACT = "contact";
-var current = "";
-var current_childName = "";
-var rotate_time = 5000;
-var NAME = "name";
-var PROJECT = "project";
-var IMG = "img";
-var TITLE = "title";
-var DESCRIPTION = "description";
+const HOME = "home";
+const ABOUT = "about";
+const RESEARCH = "research";
+const PUBLICATION = "publication";
+const PEOPLE = "people";
+const PEOPLE_CURRENT = "current-member"
+const PEOPLE_POSTDOC = "postdoc";
+const PEOPLE_GRADUATE = "graduate";
+const PEOPLE_GRADUATE_MS = "ms";
+const PEOPLE_GRADUATE_PHD = "phd";
+const PEOPLE_UNDERGRAD = "undergrad";
+const PEOPLE_ALUMNI= "alumni";
+const CONTACT = "contact";
+let current = "";
+let current_childName = "";
+let rotate_time = 5000;
+const NAME = "name";
+const PROJECT = "project";
+const IMG = "img";
+const TITLE = "title";
+const DESCRIPTION = "description";
 const LEN_PER_PAGE = 10;
 let people_pagination; // decalre the pagination object
 
@@ -170,7 +170,7 @@ const P_EMAIL = "email";
 const P_IMAGE = "img";
 
 function filter_people_by_degree(data, degree = "") {
-  data_filtered = [...data];
+  let data_filtered = [...data];
   if (degree !== "all") {
     degree !== "" && (data_filtered = [[...data_filtered[0].filter((p) => p["degree"].toLowerCase().includes(degree))]]);
   }
@@ -178,29 +178,29 @@ function filter_people_by_degree(data, degree = "") {
 }
 
 function filter_current_people(data) {
-  data_filtered = [...data];
+  let data_filtered = [...data];
   return [[...data_filtered[0].filter((p) => !p["degree"].toLowerCase().includes(PEOPLE_ALUMNI))]]
 }
 
 function filter_postdocs(data) {
-  current_all = filter_current_people(data);
+  const current_all = filter_current_people(data);
   return filter_people_by_degree(current_all, PEOPLE_POSTDOC);
 }
 
 function filter_graduates(data) {
-  current_all = filter_current_people(data);
-  ms_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_MS);
-  phd_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_PHD);
+  const current_all = filter_current_people(data);
+  const ms_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_MS);
+  const phd_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_PHD);
   return all_grads = [[...phd_students[0], ...ms_students[0]]];
 }
 
 function filter_undergrads(data) {
-  current_all = filter_current_people(data);
+  const current_all = filter_current_people(data);
   return filter_people_by_degree(current_all, PEOPLE_UNDERGRAD);
 }
 
 function filter_alumni(data) {
-  alumni = filter_people_by_degree(data, PEOPLE_ALUMNI);
+  const alumni = filter_people_by_degree(data, PEOPLE_ALUMNI);
   return alumni;
 }
 
@@ -208,8 +208,8 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
   const a = "img/people/";
   const b = "mailto:";
   let window_width = $(window).width();
-  data_in_page = [page_data.map((p) => people_data[0][p-1])];
-  page_html = "";
+  const data_in_page = [page_data.map((p) => people_data[0][p-1])];
+  let page_html = "";
   data_in_page.map(function (c) {
     if (window_width > 600) {
       $elm = $(".people_list .sample-card-desktop");
@@ -254,8 +254,8 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
 } 
 
 function init_people_pagination(people_data, len_per_page = 10) {
-  var total_number_of_people = people_data[0].length;
-  var page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
+  let total_number_of_people = people_data[0].length;
+  let page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
   let $parent = $(".people_list .ul-card");
   people_pagination = $('#people-pagination-bottom').pagination({
     dataSource: page_arr,
@@ -300,7 +300,7 @@ function init_people_pagination(people_data, len_per_page = 10) {
 }
 
 function get_people_data() {
-  data = [];
+  let data = [];
   $.getJSON("people.json", function (c) {
     data.push(c);
   });
@@ -308,23 +308,22 @@ function get_people_data() {
 }
 
 function get_total_number_of_people() {
-  data = get_people_data();
+  const data = get_people_data();
   return data[0].length;
 }
 
-var AUTHOR = "author";
-var TITLE = "title";
-var YEAR = "year";
-var DOI = "doi";
-var URL = "url";
-var JOURNAL = "journal";
-var PUBLISHER = "publisher";
-var SOURCE = "source";
-var DOCUMENT_TYPE = "document_type";
-var ISSN = "issn";
-var JOURNAL_DETAIL = "journal_detail";
-var NOT_LIST = ["Erratum"];
-var PUB_TYPE_LIST = [
+const AUTHOR = "author";
+const YEAR = "year";
+const DOI = "doi";
+const URL = "url";
+const JOURNAL = "journal";
+const PUBLISHER = "publisher";
+const SOURCE = "source";
+const DOCUMENT_TYPE = "document_type";
+const ISSN = "issn";
+const JOURNAL_DETAIL = "journal_detail";
+const NOT_LIST = ["Erratum"];
+const PUB_TYPE_LIST = [
   "article",
   "conference_paper",
   "chapter",
@@ -375,6 +374,7 @@ function f_publication() {
   });
   f_dropdown(".pub_type .dropdown-trigger");
 }
+
 function f_togglePublication(a) {
   if (a == "all") {
     $(".pub-list .ul-card li").fadeIn(1000);
@@ -387,10 +387,11 @@ function f_togglePublication(a) {
     $(".pub-list .ul-card .pub-" + item).fadeIn(1000);
   }
 }
-var PROJECT_TITLE = "name";
-var PROJECT_DESCRIPTION = "description";
-var PROJECT_APPLICATIONS = "applications";
-var PROJECT_IMG = "img";
+
+const PROJECT_TITLE = "name";
+const PROJECT_DESCRIPTION = "description";
+const PROJECT_APPLICATIONS = "applications";
+const PROJECT_IMG = "img";
 function f_research(b) {
   f_research_projects();
   f_research_funding();
@@ -403,8 +404,9 @@ function f_research(b) {
     f_scrollToChild(b);
   });
 }
+
 function f_research_projects() {
-  var a = "img/project/";
+  let a = "img/project/";
   $.getJSON("project.json", function (c) {
     $parent = $(".project-list .ul-card");
     $elm = $(".project-list .sample-project");
@@ -438,7 +440,7 @@ function f_research_projects() {
   });
 }
 function f_research_funding() {
-  var a = "img/logo/";
+  let a = "img/logo/";
   $.getJSON("funding.json", function (c) {
     $parent = $(".funding-list .collection");
     $elm = $(".funding-list .sample-item");
