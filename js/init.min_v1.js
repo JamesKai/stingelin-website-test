@@ -319,7 +319,7 @@ const URL = "url";
 const JOURNAL = "journal";
 const PUBLISHER = "publisher";
 const SOURCE = "source";
-const DOCUMENT_TYPE = "document_type";
+const TYPE = "type";
 const ISSN = "issn";
 const JOURNAL_DETAIL = "journal_detail";
 const NOT_LIST = ["Erratum"];
@@ -349,7 +349,8 @@ function f_publication() {
     var a = [];
     $.each(b, function (c, d) {
       $clone = $elm.clone();
-      doc_type = d[DOCUMENT_TYPE];
+      doc_type = d[TYPE];
+      console.log("doc type: ", doc_type);
       doc_type_class = doc_type.replace(" ", "_").toLowerCase();
       $clone.removeClass("sample-card hide");
       $clone.addClass("pub-item-" + c);

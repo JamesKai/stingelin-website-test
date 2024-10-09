@@ -28,7 +28,7 @@ PUBLISHER = "publisher"
 NOTE = "note"
 SOURCE = "source"
 ID = "ID"
-DOCUMENT_TYPE = "document_type"
+DOCUMENT_TYPE = "type"
 ABBREV_SOURCE_TITLE = "abbrev_source_title"
 ISSN = "issn"
 JOURNAL_DETAIL = "journal_detail"
@@ -66,7 +66,6 @@ def read_bib(filename):
     print("Reading bibtex entries from : " + filename)
     with open(filename) as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
-    # print(bib_database.entries)
     return bib_database
 
 
