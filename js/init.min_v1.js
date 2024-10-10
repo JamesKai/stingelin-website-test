@@ -22,7 +22,7 @@ const DESCRIPTION = "description";
 const LEN_PER_PAGE = 10;
 let people_pagination; // decalre the pagination object
 const RESEARCH_HREF_ARR = ["project-list", "aff-list", "collab-list", "funding-list", "sponsor-list"]
-const PEOPLE_HREF_ARR = ["current-members", "postdocs", "graduate-students", "undergrads", "alumni"]
+const PEOPLE_HREF_ARR = ["current-member", "postdoc", "graduate", "undergrad", "alumni"]
 
 $.ajaxSetup({
   async: false
