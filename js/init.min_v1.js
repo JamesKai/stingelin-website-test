@@ -21,6 +21,8 @@ const TITLE = "title";
 const DESCRIPTION = "description";
 const LEN_PER_PAGE = 10;
 let people_pagination; // decalre the pagination object
+const RESEARCH_HREF_ARR = ["project-list", "aff-list", "collab-list", "funding-list", "sponsor-list"]
+const PEOPLE_HREF_ARR = ["current-members", "postdocs", "graduate-students", "undergrads", "alumni"]
 
 $.ajaxSetup({
   async: false
@@ -41,15 +43,19 @@ $(document).ready(function () {
     var name = $(this).attr("name");
     f_switchContent(PEOPLE, name);
   });
-  var a = window.location.hash.substr(1);
+  let a = window.location.hash.substr(1);
   hash_child = "";
   if (a.length == 0) {
     a = HOME;
   } else {
-    if (a.includes("-")) {
+    if (RESEARCH_HREF_ARR.includes(a)) {
       hash_child = a;
       a = RESEARCH;
-    }
+    } 
+    if (PEOPLE_HREF_ARR.includes(a)) {
+      hash_child = a;
+      a = PEOPLE;
+    } 
   }
   console.log("hash : " + a + " | child: " + hash_child);
   f_switchContent(a, hash_child);
