@@ -161,6 +161,7 @@ Once you are satisfied with the changes on the test website, you can push the ch
 4. Click the website link (should display as `stingelin-lab.gatech.edu`) to open the website dashboard.
 5. Follow the instruction below to get the **ip address (or domain name of the server)**, **username**, and set the **password** for connecting to the server. They are required for connecting to the server using SFTP.
 [![N|Solid](/README_files/get_sftp_info.png)](/README_files/get_sftp_info.png)
+Note that the password may change periodically, so you would have to update and retrieve the new password from the plesk dashboard.
 6. Once you have the required information, you can use any SFTP client to connect to the server. There are multiple SFTP clients available, such as Transmit, WinSCP, Cyberduck, etc. You can use any of them to connect to the server. Alternatively, you can use the terminal to connect to the server using the `sftp` command.
 7. Once connected to the server, you can push the changes to the server by replacing the files on the server with the updated files. Alternatively, you can also connect the server to your GitHub repository in the plesk dashboard, such that when you push the code changes to the GitHub repository, the changes are automatically deployed to the server. This is the recommended way to push the changes to the server as you have source code control.
 
