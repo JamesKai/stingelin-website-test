@@ -1,8 +1,8 @@
 [
   {
     "name": "Naomi Deneke ",
-    "year": "2022 - Present",
-    "degree": "Postdoc",
+    "year": "2022 - 2024",
+    "degree": "Postdoc, Alumni",
     "major": "MSE",
     "description": "Dr. Naomi Deneke received a B.S. in Chemical Engineering from Prairie View A&M University and a Ph.D. in Materials Engineering from Purdue University. Her graduate school research focused on the adhesive properties and interfacial mechanics of silicone elastomers. Dr. Deneke is currently a President’s Postdoctoral Fellow in the School of Materials Science and Engineering. Her research interests involve using interfacial patterning to control the adhesive properties of soft materials, specifically to design sustainable multilayer flexible films. In her spare time, she enjoys reading, trying new foods, and going on walks with her dog.",
     "email": "ndeneke3@gatech.edu",
@@ -37,8 +37,8 @@
   },
   {
     "name": "Tanner Hickman",
-    "year": "2019 - Present",
-    "degree": "PhD",
+    "year": "2019 - 2024",
+    "degree": "PhD, Alumni",
     "major": "ChBE",
     "description": "Co-advised by Dr. Carson Meredith, Tanner studies swelling and gas permeation in multicomponent polymer systems with a focus on renewable materials. He received his B.S. in Chemical and Biomolecular Engineering from the University of South Alabama. There, he was advised by Dr. Kevin West and studied gas-expanded ionic liquids as well as surface-functionalized cellulose with superhydrophobic and antimicrobial properties. In his spare time, Tanner enjoys hiking and playing soccer.",
     "email": "thickman6@gatech.edu",
@@ -46,8 +46,8 @@
   },
   {
     "name": "Victoria Quiros Cordero",
-    "year": "2019 - Present",
-    "degree": "PhD",
+    "year": "2019 - 2024",
+    "degree": "PhD, Alumni",
     "major": "MSE",
     "description": "Victoria studies solution-processed optical microcavities for polariton-based optoelectronics, co-advised by professor Carlos Silva. She graduated with a B.S. in Physics and another in Electrical Engineering from the University of Costa Rica. During her undergrad, she was a research assistant at the Materials Science and Engineering Research Center of her university. Also, in the Summer of 2018, as an intern in the Whitesides Research Group, she investigated the charge transport through self-assembled monolayers on a bendable bottom-electrode. Outside of academics, Victoria likes contemporary dance, exercising, attending concerts, and hiking.",
     "email": "victoria.quiroscordero@gatech.edu",
@@ -82,8 +82,8 @@
   },
   {
     "name": "Hsiang-Ju(James) Kai",
-    "year": "2022 - Present",
-    "degree": "PhD",
+    "year": "2022 - 2024",
+    "degree": "Alumni",
     "major": "ChBE",
     "description": "Co-advised by Dr. Thomas Gartner, James explores the physical chemistry of polyolefin-cellulose interfaces through experimental and computational approaches. He graduated with his B.S in ChBE from National Taiwan University in 2018 and M.S in ChBE from the University of Pennsylvania in 2020. Before joining the lab, he worked as a research scientist in Academia Sinica and a biomedical startup company under Dr. Jung-Chi Laio. In his spare time, he enjoys watching movies, reading books and playing video games.",
     "email": "james.kai@gatech.edu",
@@ -99,9 +99,18 @@
     "img": "matteo.png"
   },
   {
+    "name": "Jude Kpare",
+    "year": "2023 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Jude is a PhD student in the Stingelin Lab and a member of the Center for Soft PhotoElectroChemical Systems (SPECS). His research focuses on developing organic semiconductors for renewable energy applications specifically in solar energy harvesting, while also understanding their optical, thermal and electrochemical properties. Jude received his B.Sc. in Materials Engineering from the Kwame Nkrumah University of Science and Technology, Ghana in 2021. His research there centered on fabricating recycled PE/graphene composites for electronic packaging. He also founded the Materials Innovation Hub, a student club focused on inspiring students' interest in MSE and fostering innovation. At his leisure time, he enjoys watching soccer, playing video games, cooking, and playing the piano.",
+    "email": "jkpare3@gatech.edu",
+    "img": "jude.png"
+  },
+  {
     "name": "Linda Tian",
-    "year": "2021 - Present",
-    "degree": "MS",
+    "year": "2021 - 2023",
+    "degree": "MS, Alumni",
     "major": "MSE",
     "description": "Linda studies how local order can be controlled through blending conjugated polymers with ionic liquids. Outside of lab, Linda is the founder and president of Georgia Tech's first free textbook lending system, TRAILS (Textbook Redistribution and Institutional Lending System), a charitable organization that provides free class textbooks to undergraduate and graduate students from economically disadvantaged backgrounds. Linda received her B.S. in Biomedical Engineering from Georgia Tech in 2019. In her undergraduate thesis research, she investigated the biomedical applications of triboelectric nanogenerators (TENGs), under the advisement of Professor Zhong L. Wang. In her spare time, she enjoys trying new foods, reading, traveling, and walking her puppy, Lily Pad Thai III.",
     "email": "ltian31@gatech.edu",
@@ -109,8 +118,8 @@
   },
   {
     "name": "Andrew Setley",
-    "year": "2022 - Present",
-    "degree": "MS",
+    "year": "2022 - 2024",
+    "degree": "MS, Alumni",
     "major": "MSE",
     "description": "Andrew is a second-year Master’s student in the Stingelin Lab and a member of SPECS, the Center for Soft PhotoElectroChemical Systems. His research seeks to understand the impact static and dynamic disorder have on the optical, thermal, and electrochemical properties of rigid-rod conjugated polymers used for photoelectrochemical devices. Andrew received his B.S. in MSE from the University of Washington, Seattle in 2014, with a minor in mathematics. His research there centered on the process engineering of DRIE etch trenches for MEMS and TSVs. After graduating, he worked as a scientist at Crane Currency, where he formulated printing inks and resins used in micro-optic banknote threads and brand enhancement labels. In his free time, he enjoys cooking, boxing, baseball, hiking, and traveling with his wife and Welsh Terrier.",
     "email": "asetley@gatech.edu",
@@ -145,8 +154,8 @@
   },
   {
     "name": "Anush Singhal",
-    "year": "2021 - Present",
-    "degree": "Undergrad",
+    "year": "2021 - 2024",
+    "degree": "Undergrad, Alumni",
     "major": "MSE",
     "description": "Anush investigates the role of processing on the optoelectronic properties of hairy-rod polymer systems used for organic semiconductor applications. Additionally, he is interested in the solidification kinetics of conjugated polymers. He plans on graduating May 2024 with a BS in MSE. In his spare time, Anush enjoys gardening, skiing and 3D design.",
     "email": "asinghal74@gatech.edu",
