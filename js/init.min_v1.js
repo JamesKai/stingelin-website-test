@@ -22,7 +22,7 @@ const DESCRIPTION = "description";
 const LEN_PER_PAGE = 10;
 let people_pagination; // decalre the pagination object
 const RESEARCH_HREF_ARR = ["project-list", "aff-list", "collab-list", "funding-list", "sponsor-list"]
-const PEOPLE_HREF_ARR = ["current-member", "postdoc", "graduate", "undergrad", "alumni"]
+const PEOPLE_HREF_ARR = ["current-member", "alumni"]
 
 $.ajaxSetup({
   async: false
@@ -125,21 +125,7 @@ function f_switchContent(b, a) {
       $(".content")
         .load("people.html", function () {
           $(".parallax").parallax();
-          data = get_people_data();
-          if (a == PEOPLE_CURRENT) {
-            data_filtered = filter_current_people(data);
-          } else if (a == PEOPLE_POSTDOC) {
-            data_filtered = filter_postdocs(data);
-          } else if(a == PEOPLE_GRADUATE){
-            data_filtered = filter_graduates(data);
-          } else if (a == PEOPLE_UNDERGRAD) {
-            data_filtered = filter_undergrads(data);
-          } else if (a == PEOPLE_ALUMNI) {
-            data_filtered = filter_alumni(data);
-          } else {
-            data_filtered = data
-          }
-          init_people_pagination(data_filtered, LEN_PER_PAGE);
+          f_people(a);
         })
         .hide()
         .fadeIn();
@@ -189,25 +175,30 @@ function filter_current_people(data) {
 }
 
 function filter_postdocs(data) {
-  const current_all = filter_current_people(data);
-  return filter_people_by_degree(current_all, PEOPLE_POSTDOC);
+  return filter_people_by_degree(data, PEOPLE_POSTDOC);
 }
 
 function filter_graduates(data) {
-  const current_all = filter_current_people(data);
-  const ms_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_MS);
-  const phd_students = filter_people_by_degree(current_all, PEOPLE_GRADUATE_PHD);
-  return all_grads = [[...phd_students[0], ...ms_students[0]]];
+  const ms_students = filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
+  const phd_students = filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
+  const other_graduates = filter_people_by_degree(data, PEOPLE_GRADUATE);
+  return all_grads = [[...phd_students[0], ...other_graduates[0], ...ms_students[0]]];
+}
+
+function filter_graduates_ms(data) {
+  return filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
+}
+
+function filter_graduates_phd(data) {
+  return filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
 }
 
 function filter_undergrads(data) {
-  const current_all = filter_current_people(data);
-  return filter_people_by_degree(current_all, PEOPLE_UNDERGRAD);
+  return filter_people_by_degree(data, PEOPLE_UNDERGRAD);
 }
 
 function filter_alumni(data) {
-  const alumni = filter_people_by_degree(data, PEOPLE_ALUMNI);
-  return alumni;
+  return filter_people_by_degree(data, PEOPLE_ALUMNI);
 }
 
 function render_people_pagination(people_data, page_data, len_per_page = 10) {
@@ -218,9 +209,9 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
   let page_html = "";
   data_in_page.map(function (c) {
     if (window_width > 600) {
-      $elm = $(".people_list .sample-card-desktop");
+      $elm = $(".people-list .sample-card-desktop");
     } else {
-      $elm = $(".people_list .sample-card-mobile");
+      $elm = $(".people-list .sample-card-mobile");
     };
 
     $.each(c, function (d, e) {
@@ -259,10 +250,56 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
   return page_html;
 } 
 
+function f_people(people_status) {
+  data = get_people_data();
+  if (people_status == PEOPLE_CURRENT) {
+    data_filtered = filter_current_people(data);
+  } else if (people_status == PEOPLE_ALUMNI) {
+    data_filtered = filter_alumni(data);
+  } else {
+    data_filtered = data
+  }
+  init_people_pagination(data_filtered, LEN_PER_PAGE);
+
+  $(".people_type_content li").on("click", function () {
+    data = get_people_data();
+    if (people_status == PEOPLE_CURRENT) {
+      data_filtered = filter_current_people(data);
+    } 
+    else if (people_status == PEOPLE_ALUMNI) {
+      data_filtered = filter_alumni(data);
+      console.log(data_filtered, "in good");
+    } else {
+      data_filtered = data
+    }
+    let name = $(this).find("a").text();
+    $(".people_type .people_type_nav").html(name);
+    people_type = $(this).find("a").attr("type");
+    people_type = people_type.split(" ")[0];
+
+    if (people_type == PEOPLE_POSTDOC) {
+      data_filtered = filter_postdocs(data_filtered);
+    } else if(people_type == PEOPLE_GRADUATE){
+      data_filtered = filter_graduates(data_filtered);
+    } else if(people_type == PEOPLE_GRADUATE_PHD){
+      data_filtered = filter_graduates_phd(data_filtered);
+    } else if(people_type == PEOPLE_GRADUATE_MS){
+      data_filtered = filter_graduates_ms(data_filtered);
+    } else if (people_type == PEOPLE_UNDERGRAD) {
+      data_filtered = filter_undergrads(data_filtered);
+    } else if (people_type == "all" || people_type == "") {
+      data_filtered = data_filtered
+    }
+
+    init_people_pagination(data_filtered, LEN_PER_PAGE);
+  });
+  f_dropdown(".people_type .dropdown-trigger"); 
+}
+
 function init_people_pagination(people_data, len_per_page = 10) {
   let total_number_of_people = people_data[0].length;
   let page_arr = Array.from({ length: total_number_of_people}, (_, i) => i + 1);
-  let $parent = $(".people_list .ul-card");
+  let $parent = $(".people-list .ul-card");
   people_pagination = $('#people-pagination-bottom').pagination({
     dataSource: page_arr,
     className: "paginationjs-big",
@@ -287,7 +324,7 @@ function init_people_pagination(people_data, len_per_page = 10) {
       $parent.hide().fadeIn();
     },
   });
-  $(".people_list .ul-card").hammer().on('swiperight', function(event) {
+  $(".people-list .ul-card").hammer().on('swiperight', function(event) {
     // if it is not the first page, go to previous page and fade in the content
     if (people_pagination.pagination('getCurrentPageNum') > 1) {
       people_pagination.pagination('previous');
@@ -295,7 +332,7 @@ function init_people_pagination(people_data, len_per_page = 10) {
       console.log('previous page');  
     }
   }); 
-  $(".people_list .ul-card").hammer().on('swipeleft', function(event) { 
+  $(".people-list .ul-card").hammer().on('swipeleft', function(event) { 
     // if it is not the last page, go to next page and fade in the content
     if (people_pagination.pagination('getCurrentPageNum') < people_pagination.pagination('getTotalPage')) {
       people_pagination.pagination('next');
@@ -393,6 +430,19 @@ function f_togglePublication(a) {
     item = a[i];
     $(".pub-list .ul-card .pub-" + item).fadeIn(1000);
   }
+}
+
+const PEOPLE_TYPE_LIST = [
+  "all",
+  "postdoc",
+  "graduate",
+  "undergrad",
+];
+function f_togglePeople(a) {
+  let people_status = window.location.hash.substr(1); 
+  console.log("people status: ", people_status);
+  console.log("people type: ", a);
+  f_switchContent(PEOPLE, people_status, a);
 }
 
 const PROJECT_TITLE = "name";

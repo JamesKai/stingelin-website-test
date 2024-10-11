@@ -506,6 +506,19 @@ nav ul a,
     }
 } */
 
+.people-list .people_type ul {
+    font-weight: 300
+}
+
+.people-list .people_type a {
+    width: 150px
+}
+
+.people-list .people_type .btn {
+    background-color: #062f4f;
+    margin-bottom: 30px
+}
+
 .people_card .highlight .degree,
 .people_card .highlight .year {
     /* padding: 7px 10px; */
