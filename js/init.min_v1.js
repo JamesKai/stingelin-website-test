@@ -23,6 +23,7 @@ const LEN_PER_PAGE = 10;
 let people_pagination; // decalre the pagination object
 const RESEARCH_HREF_ARR = ["project-list", "aff-list", "collab-list", "funding-list", "sponsor-list"]
 const PEOPLE_HREF_ARR = ["current-member", "alumni"]
+const PEOPLE_DEGREE_ARR = [PEOPLE_POSTDOC, PEOPLE_GRADUATE, PEOPLE_GRADUATE_MS, PEOPLE_GRADUATE_PHD, PEOPLE_UNDERGRAD]
 
 $.ajaxSetup({
   async: false
@@ -61,6 +62,7 @@ $(document).ready(function () {
   f_switchContent(a, hash_child);
   f_scrollToTop();
 });
+
 function f_scrollToTop() {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -74,6 +76,7 @@ function f_scrollToTop() {
     return false;
   });
 }
+
 function f_initNav() {
   $(".nav_desktop .dropdown-trigger").dropdown({
     hover: true,
@@ -84,16 +87,19 @@ function f_initNav() {
   f_dropdown(".nav_mobile .dropdown-trigger");
   $(".parallax").parallax();
 }
+
 function f_initHome() {
   console.log("init the home page");
   $(".parallax").parallax();
   $(".carousel").carousel({ indicators: false });
   setTimeout(f_autoplay_carousel, rotate_time);
 }
+
 function f_autoplay_carousel() {
   $(".carousel").carousel("next");
   setTimeout(f_autoplay_carousel, rotate_time);
 }
+
 function f_switchContent(b, a) {
   // scrolling to the specific research project
   if (b == RESEARCH && b == current) {
@@ -169,36 +175,28 @@ function filter_people_by_degree(data, degree = "") {
   return data_filtered;
 }
 
-function filter_current_people(data) {
-  let data_filtered = [...data];
-  return [[...data_filtered[0].filter((p) => !p["degree"].toLowerCase().includes(PEOPLE_ALUMNI))]]
-}
-
-function filter_postdocs(data) {
-  return filter_people_by_degree(data, PEOPLE_POSTDOC);
-}
-
-function filter_graduates(data) {
-  const ms_students = filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
-  const phd_students = filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
-  const other_graduates = filter_people_by_degree(data, PEOPLE_GRADUATE);
-  return all_grads = [[...phd_students[0], ...other_graduates[0], ...ms_students[0]]];
-}
-
-function filter_graduates_ms(data) {
-  return filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
-}
-
-function filter_graduates_phd(data) {
-  return filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
-}
-
-function filter_undergrads(data) {
-  return filter_people_by_degree(data, PEOPLE_UNDERGRAD);
-}
-
-function filter_alumni(data) {
-  return filter_people_by_degree(data, PEOPLE_ALUMNI);
+function filter_people(data, by){
+  switch (by) {
+    case PEOPLE_CURRENT:
+      return [[...data[0].filter((p) => !p["degree"].toLowerCase().includes(PEOPLE_ALUMNI))]]
+    case PEOPLE_POSTDOC:
+      return filter_people_by_degree(data, PEOPLE_POSTDOC);
+    case PEOPLE_GRADUATE:
+      const ms_students = filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
+      const phd_students = filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
+      const other_graduates = filter_people_by_degree(data, PEOPLE_GRADUATE);
+      return [[...phd_students[0], ...other_graduates[0], ...ms_students[0]]];
+    case PEOPLE_GRADUATE_MS:
+      return filter_people_by_degree(data, PEOPLE_GRADUATE_MS);
+    case PEOPLE_GRADUATE_PHD:
+      return filter_people_by_degree(data, PEOPLE_GRADUATE_PHD);
+    case PEOPLE_UNDERGRAD:
+      return filter_people_by_degree(data, PEOPLE_UNDERGRAD);
+    case PEOPLE_ALUMNI:
+      return filter_people_by_degree(data, PEOPLE_ALUMNI);
+    default:
+      return data;
+  }
 }
 
 function render_people_pagination(people_data, page_data, len_per_page = 10) {
@@ -252,45 +250,27 @@ function render_people_pagination(people_data, page_data, len_per_page = 10) {
 
 function f_people(people_status) {
   data = get_people_data();
-  if (people_status == PEOPLE_CURRENT) {
-    data_filtered = filter_current_people(data);
-  } else if (people_status == PEOPLE_ALUMNI) {
-    data_filtered = filter_alumni(data);
-  } else {
-    data_filtered = data
-  }
+  let data_filtered = filter_people(data, people_status);
   init_people_pagination(data_filtered, LEN_PER_PAGE);
+
+  // do not show the degree nav if there is no people in that degree
+  exclude_degree_navs = [];
+  for (i in PEOPLE_DEGREE_ARR) {
+    let degree = PEOPLE_DEGREE_ARR[i];
+    if (filter_people(data_filtered, degree)[0].length == 0) {
+      exclude_degree_navs.push(degree);
+      $(`.people_type_content li a[type="${degree}"`).closest("li").hide();
+    }
+  } 
 
   $(".people_type_content li").on("click", function () {
     data = get_people_data();
-    if (people_status == PEOPLE_CURRENT) {
-      data_filtered = filter_current_people(data);
-    } 
-    else if (people_status == PEOPLE_ALUMNI) {
-      data_filtered = filter_alumni(data);
-      console.log(data_filtered, "in good");
-    } else {
-      data_filtered = data
-    }
+    data_filtered = filter_people(data, people_status);
     let name = $(this).find("a").text();
     $(".people_type .people_type_nav").html(name);
     people_type = $(this).find("a").attr("type");
     people_type = people_type.split(" ")[0];
-
-    if (people_type == PEOPLE_POSTDOC) {
-      data_filtered = filter_postdocs(data_filtered);
-    } else if(people_type == PEOPLE_GRADUATE){
-      data_filtered = filter_graduates(data_filtered);
-    } else if(people_type == PEOPLE_GRADUATE_PHD){
-      data_filtered = filter_graduates_phd(data_filtered);
-    } else if(people_type == PEOPLE_GRADUATE_MS){
-      data_filtered = filter_graduates_ms(data_filtered);
-    } else if (people_type == PEOPLE_UNDERGRAD) {
-      data_filtered = filter_undergrads(data_filtered);
-    } else if (people_type == "all" || people_type == "") {
-      data_filtered = data_filtered
-    }
-
+    data_filtered = filter_people(data_filtered, people_type);
     init_people_pagination(data_filtered, LEN_PER_PAGE);
   });
   f_dropdown(".people_type .dropdown-trigger"); 
@@ -496,6 +476,7 @@ function f_research_projects() {
     });
   });
 }
+
 function f_research_funding() {
   let a = "img/logo/";
   $.getJSON("funding.json", function (c) {
@@ -529,6 +510,7 @@ function f_research_funding() {
     });
   });
 }
+
 function f_scrollToChild(a) {
   if (a) {
     console.log("scrolling to childName :" + a);
@@ -539,6 +521,7 @@ function f_scrollToChild(a) {
     current_childName = a;
   }
 }
+
 function f_dropdown(a) {
   $(a).dropdown({
     constrainWidth: false,
