@@ -32,15 +32,15 @@ $.ajaxSetup({
 $(document).ready(function () {
   console.log("ready!");
   $(".nav_mobile").sidenav({ draggable: true });
-  $(".nav-item").on("click", function () {
+  $(".nav-item").on("click touchstart", function () {
     var name = $(this).attr("name");
     f_switchContent(name, "");
   });
-  $(".research_nav_item").on("click", function () {
+  $(".research_nav_item").on("click touchstart", function () {
     var name = $(this).attr("name");
     f_switchContent(RESEARCH, name);
   });
-  $(".people_nav_item").on("click", function () {
+  $(".people_nav_item").on("click touchstart", function () {
     var name = $(this).attr("name");
     f_switchContent(PEOPLE, name);
   });
@@ -263,7 +263,7 @@ function f_people(people_status) {
     }
   } 
 
-  $(".people_type_content li").on("click", function () {
+  $(".people_type_content li").on("click touchstart", function () {
     data = get_people_data();
     data_filtered = filter_people(data, people_status);
     let name = $(this).find("a").text();
@@ -357,7 +357,7 @@ const PUB_TYPE_LIST = [
 ];
 function f_publication() {
   console.log("publication : ");
-  $(".pub_type_content li").on("click", function () {
+  $(".pub_type_content li").on("click touchstart", function () {
     let name = $(this).find("a").text();
     console.log(name)
     $(".pub_type .pub_type_nav").html(name);
