@@ -32,7 +32,7 @@ $.ajaxSetup({
 $(document).ready(function () {
   console.log("ready!");
   $(".nav_mobile").sidenav({ draggable: true });
-  $(".nav-item").on("click touchstart", function () {
+  $(".nav-item").on("click", function () {
     var name = $(this).attr("name");
     f_switchContent(name, "");
   });
