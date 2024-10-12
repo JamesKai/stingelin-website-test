@@ -108,6 +108,15 @@
     "img": "jude.png"
   },
   {
+    "name": "Zhihao Feng",
+    "year": "2023 - Present",
+    "degree": "PhD",
+    "major": "ChBE",
+    "description": "Co-advised by Dr. Seung Soon Jang, Zhihao explores the self-assembly structure and thermal transition behaviors of semiconducting polymers through a combination of Density Functional Theory (DFT), Molecular Dynamics (MD), and Machine Learning (ML). He received his B.S. in ChBE from SUNY Buffalo in 2019 and completed his M.S. in the same field at Cornell University in 2021.",
+    "email": "zfeng77@gatech.edu",
+    "img": "zhihao.png"
+  },
+  {
     "name": "Linda Tian",
     "year": "2021 - 2023",
     "degree": "MS, Alumni",
