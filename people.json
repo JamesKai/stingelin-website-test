@@ -117,6 +117,15 @@
     "img": "zhihao.png"
   },
   {
+    "name": "Volha Heben",
+    "year": "2024 - Present",
+    "degree": "PhD",
+    "major": "MSE",
+    "description": "Volha is a PhD student who joined the Stingelin Lab in Fall 2024. Her research will focus on designing, developing, and investigating multilayer photonic structures incorporating hybrid inorganic/organic materials for light-management applications. She holds a B.S. in Chemistry from the Department of Chemistry at Aristotle University of Thessaloniki (AUTh), Greece, and earned her M.S. in Nanoscience and Nanotechnologies from the Department of Physics at the same university in 2023. Volha also worked as a researcher in the Organic Electronics group at the Nanotechnology Lab LTFN at AUTh, where she focused on the development and characterization of flexible printed nano-layers and organic photovoltaic devices. In her spare time, she enjoys cooking, traveling, listening to music, and watching movies.",
+    "email": "vheben3@gatech.edu",
+    "img": "volha.jpg"
+  },
+  {
     "name": "Linda Tian",
     "year": "2021 - 2023",
     "degree": "MS, Alumni",
@@ -136,8 +145,8 @@
   },
   {
     "name": "Reanna Rafiq",
-    "year": "2020 - Present",
-    "degree": "Undergrad",
+    "year": "2020 - 2023",
+    "degree": "Undergrad, Alumni",
     "major": "ChBE",
     "description": "Reanna is a second-year chemical engineering student who works in the Stingelin Lab as an undergraduate research assistant to Marlow Durbin. Her research is focused on developing soft, conducting organic material, specifically for bioelectronic applications. She plans to graduate in May 2024. In her spare time, she enjoys playing the piano and going hiking.",
     "email": "rrafiq3@gatech.edu",
@@ -154,8 +163,8 @@
   },
   {
     "name": "Anna Burson",
-    "year": "2021 - Present",
-    "degree": "Undergrad",
+    "year": "2021 - 2023",
+    "degree": "Undergrad, Alumni",
     "major": "ChBE",
     "description": "Anna’s research focuses on inorganic-organic hybrid solutions of titanium oxide hydrate and a polyalcohol. These hybrids have applications as fuels for photosynthetic rechargeable batteries and photosynthetic fuel cells. She works as an undergraduate assistant to Alex Balzer. Anna plans to graduate in December 2024 with a B.S. in ChBE. Her hobbies include reading, baking, and hiking.",
     "email": "aburson6@gatech.edu",
@@ -172,8 +181,8 @@
   },
   {
     "name": "Mehul Dhoot",
-    "year": "2022 - Present",
-    "degree": "Undergrad",
+    "year": "2022 - 2024",
+    "degree": "Undergrad, Alumni",
     "major": "ChBE",
     "description": "As an undergraduate assistant to Victoria Quiros Cordero, Mehul fabricates solution-processed thin films made from an organic-inorganic hybrid material and analyzes their optical properties. He is also experimenting with the effects of photonic curing on these films and their potential applications in photonic crystals. In his free time, Mehul enjoys sports, video games, and outdoor activities.",
     "email": "mdhoot6@gatech.edu",
@@ -190,8 +199,8 @@
   },
   {
     "name": "Peter Gardner",
-    "year": "2022 - Present",
-    "degree": "Undergrad",
+    "year": "2022 - 2023",
+    "degree": "Undergrad, Alumni",
     "major": "ChBE",
     "description": "Peter assists Javaz Rolle in both the Stingelin and Meredith labs. He works on using the HTMECH to test interlayer adhesion of polycarbonate bilayers and coating paper with chitin and cellulose to be used as an oxygen barrier in food packaging. After graduating in May 2024, Peter will go into industry as a food engineer. In his free time, he enjoys playing the cello and ultimate frisbee.",
     "email": "pgardner9@gatech.edu",
@@ -204,7 +213,7 @@
     "major": "ChBE",
     "description": "Working in both the Stingelin and Meredith labs, Sabrina is an undergraduate research assistant to Tanner Hickman. She investigates the use of titanium oxide hydrates in photocurable cellulose based gas barrier films. Upon graduating in May 2024, Sabrina will start her career in a chemical plant as a process engineer. In her free time, she enjoys reading, astronomy, and playing board games.",
     "email": "sklein43@gatech.edu",
-    "img": "default.jpg"
+    "img": "sabrina.jpg"
   },
   {
     "name": "Sebastian Toyotoshi",
@@ -214,6 +223,15 @@
     "description": "Sebastian is a first-year undergraduate student currently working under Henry Kantrow as a research assistant. He works to design and construct a device to analyze the photophysics of P3HT and other semiconducting polymers using electroabsorption spectroscopy. In his free time, he enjoys playing tabletop games, baking, and walking through nature.",
     "email": "stoyotoshi3@gatech.edu ",
     "img": "sebastian.jpg"
+  },
+  {
+    "name": "Joshua Clark",
+    "year": "2022 - Present",
+    "degree": "Undergrad",
+    "major": "ChBE",
+    "description": "Josh is a second-year undergraduate student working under Henry Kantrow as a research assistant. During Spring and Summer 2023, he worked on characterizing the phase separation of PBTTT:ionic liquid blends. Currently, he works on conducting in-situ UV-Vis spectroscopy and X-Ray diffraction with electrochemistry on PBTTT:ionic liquid systems. Outside of research, Josh enjoys producing digital music, backpacking, and mountain biking.",
+    "email": "jclark370@gatech.edu",
+    "img": "joshua.jpg"
   },
   {
     "name": "Seong-Min Kim",
